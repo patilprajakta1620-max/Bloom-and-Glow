@@ -1,0 +1,373 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3">BLOOM<small>AND GLOW</small></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+    <!-- END NAVBAR -->
+
+
+
+
+<!-- HERO -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Terms & Conditions | Bloom & Glow</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="terms.css">
+</head>
+<body>
+
+<!-- HERO -->
+<section class="terms-hero">
+  <div class="container text-center">
+    <h1>Terms & Conditions</h1>
+    <p>Please read carefully before using Bloom & Glow services</p>
+  </div>
+</section>
+
+<!-- CONTENT -->
+<section class="terms-content py-5">
+  <div class="container">
+
+    <div class="terms-box">
+      <h3>1. Acceptance of Terms</h3>
+      <p>
+        By accessing or using Bloom & Glow’s website, products, or services, you agree to be bound by these Terms & Conditions.  
+        If you do not agree, please discontinue use immediately.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>2. Products & Usage</h3>
+      <p>
+        All Bloom & Glow products are for external use only unless stated otherwise.  
+        Please perform a patch test before use. We are not responsible for allergic reactions due to individual skin sensitivity.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>3. Pricing & Payments</h3>
+      <p>
+        Prices listed on the website are in Indian Rupees (₹) and are subject to change without prior notice.  
+        Bloom & Glow reserves the right to modify or discontinue any product at any time.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>4. Orders & Cancellations</h3>
+      <p>
+        Orders once placed cannot be cancelled after dispatch.  
+        Bloom & Glow reserves the right to cancel orders due to stock unavailability, pricing errors, or payment issues.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>5. Shipping & Delivery</h3>
+      <p>
+        Estimated delivery timelines are shared for reference only.  
+        Delays caused by courier partners, weather, or unforeseen circumstances are beyond our control.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>6. Returns & Refunds</h3>
+      <p>
+        Products once opened or used are not eligible for return due to hygiene reasons.  
+        Refunds, if applicable, will be processed to the original payment method within 7–10 working days.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>7. Intellectual Property</h3>
+      <p>
+        All content, images, logos, and designs on this website are the intellectual property of Bloom & Glow.  
+        Unauthorized use or reproduction is strictly prohibited.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>8. User Responsibilities</h3>
+      <p>
+        Users agree not to misuse the website, submit false information, or attempt unauthorized access.  
+        Any violation may result in termination of access without notice.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>9. Limitation of Liability</h3>
+      <p>
+        Bloom & Glow shall not be liable for any indirect, incidental, or consequential damages arising from product use or website access.
+      </p>
+    </div>
+
+    <div class="terms-box">
+      <h3>10. Changes to Terms</h3>
+      <p>
+        Bloom & Glow reserves the right to update these Terms & Conditions at any time.  
+        Continued use of the website indicates acceptance of the updated terms.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER NOTE -->
+<footer class="terms-footer text-center">
+  <p>© 2025 Bloom & Glow. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+ <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+

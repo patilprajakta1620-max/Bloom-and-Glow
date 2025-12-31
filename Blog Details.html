@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3">BLOOM<small>AND GLOW</small></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+<!-- HERO: BLOG DETAILS (pink) -->
+<section class="blogdetails-hero">
+  <div class="container h-100">
+    <div class="row h-100 align-items-center text-center">
+      <div class="col-12">
+        <h1 class="hero-title">Blog Details</h1>
+        <p class="blog-details-intro">
+  Dive deeper into expert beauty insights and skincare knowledge.  
+  This article breaks down routines, ingredients, and tips you can trust.  
+  Read at your pace and apply what truly works for your skin.
+</p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BLOG DETAILS MAIN -->
+<section class="blog-details py-5">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- LEFT SIDE CONTENT -->
+      <div class="col-lg-8">
+        <div class="bd-main">
+
+          <!-- 1. SMALL CENTER BANNER (single image) -->
+          <div class="top-banner mb-3">
+            <img src="products-images/toner.avif" alt="Blog banner">
+          </div>
+
+          <!-- META -->
+          <div class="meta-info mb-3">
+            <span>👁️ 4679 Views</span>
+            <span>💬 2986 Comments</span>
+          </div>
+
+          <!-- MAIN TITLE -->
+          <h2 class="bd-title">The Secret to Naturally Glowing Skin — The Bloom & Glow Ritual </h2>
+
+          <!-- PARAGRAPH 1 -->
+          <p class="bd-text">
+          In a world full of filters and heavy makeup, the real confidence comes from naturally glowing skin. Bloom & Glow brings you a skincare ritual designed to nourish the skin from within and reveal a healthy, effortless radiance.
+
+
+          </p>
+
+          <!-- 2. TWO IMAGES SIDE BY SIDE -->
+          <div class="row bd-two-images mb-3">
+            <div class="col-md-6 mb-3 mb-md-0">
+              <img src="products-images/cleanser2.avif" alt="Blog image 1">
+            </div>
+            <div class="col-md-6">
+              <img src="products-images/lotion2.avif" alt="Blog image 2">
+            </div>
+          </div>
+
+          <!-- PARAGRAPH 2 -->
+          <p class="bd-text">
+            <h5>Conclusion</h5>
+           A natural glow is not a miracle—it’s a habit. With Bloom & Glow’s simple yet powerful routine, glowing skin becomes effortless every day.
+          </p>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDEBAR -->
+      <div class="col-lg-4">
+
+        <!-- 4. CATEGORIES WITH HOVER DESCRIPTION -->
+        <div class="sidebar-box categories">
+          <h4>Categories</h4>
+          <ul class="cat-list">
+            <li>
+              <span class="cat-name">💄 Beauty Tips</span>
+              <p class="cat-desc">Quick routines and everyday tricks for glowing skin and soft makeup looks.</p>
+            </li>
+            <li>
+              <span class="cat-name">🧴 Organic Products</span>
+              <p class="cat-desc">Discover gentle formulas with clean, plant-powered ingredients.</p>
+            </li>
+            <li>
+              <span class="cat-name">💆 Skin Care</span>
+              <p class="cat-desc">Step-by-step guides to cleanse, treat and protect your skin barrier.</p>
+            </li>
+            <li>
+              <span class="cat-name">✨ Natural Beauty</span>
+              <p class="cat-desc">Simple rituals that celebrate your natural features and texture.</p>
+            </li>
+            <li>
+              <span class="cat-name">🌸 Hair Care</span>
+              <p class="cat-desc">Nourishing tips for shiny lengths, healthy scalp and frizz-free styles.</p>
+            </li>
+          </ul>
+        </div>
+
+        <!-- 5. BLOG POST – ONLY 3 ITEMS, NO TABS -->
+        <div class="sidebar-box blog-posts">
+          <h4>Blog Post</h4>
+
+          <div class="blog-small" onclick="loadBlog(1)">
+  <img src="products-images/setting spray.jpg">
+  <p>Foods That Are Good for Your Skin — Eat Your Way to a Natural Glow</p>
+</div>
+
+<div class="blog-small" onclick="loadBlog(2)">
+  <img src="products-images/highlighter1.jpg">
+  <p>Why Clean Beauty Matters — The Bloom & Glow Philosophy</p>
+</div>
+
+<div class="blog-small" onclick="loadBlog(3)">
+  <img src="products-images/sunscreen1.avif">
+  <p>5 Daily Habits That Make Your Skin Glow Naturally</p>
+</div>
+
+
+          <script>
+  // All blog data stored here
+  const blogData = {
+    1: {
+      banner: "products-images/setting spray.jpg",
+      title: "Foods That Are Good for Your Skin — Eat Your Way to a Natural Glow",
+      text1: "Healthy, glowing skin starts from within, and the food you eat plays a major role in how your skin looks and feels. Nutrient-rich foods supply your skin with essential vitamins, antioxidants, and minerals that help repair damage and maintain a youthful appearance. A balanced diet supports collagen production, improves hydration levels, and enhances your skin’s natural radiance from the inside out.",
+      text2: "Beyond skincare results, clean beauty represents a conscious and responsible approach to self-care. By using ethically sourced ingredients, cruelty-free formulations, and eco-friendly packaging, clean beauty minimizes harm to the environment while delivering effective performance. Bloom & Glow follows this philosophy to ensure that every product not only enhances your natural glow but also aligns with values of trFoods rich in vitamin C, healthy fats, omega-3 fatty acids, and antioxidants help protect the skin from environmental damage and premature aging. Fresh fruits, leafy greens, nuts, seeds, and hydrating foods strengthen the skin barrier and promote an even skin tone. When combined with good hydration and clean skincare, a skin-friendly diet helps you achieve long-lasting glow and naturally healthy skin every day.ansparency, sustainability, and mindful beauty. Choosing clean beauty means investing in healthier skin today and a better tomorrow.",
+      img1: "all photos/banner img 1.jpg",
+      img2: "all photos/image 4.jpg"
+    },
+    2: {
+      banner: "products-images/highlighter1.jpg",
+      title: "Why Clean Beauty Matters — The Bloom & Glow Philosophy",
+      text1: "Clean beauty focuses on using products that are safe, gentle, and free from harmful chemicals that can damage the skin over time. Many conventional beauty products contain toxins, parabens, and sulfates that may cause irritation, sensitivity, and long-term skin concerns. Bloom & Glow believes that skincare should work in harmony with your skin, supporting its natural barrier and enhancing its health without compromising safety or quality.",
+      text2: "Beyond skincare benefits, clean beauty reflects a mindful lifestyle that values transparency, sustainability, and ethical practices. By choosing responsibly sourced ingredients, cruelty-free formulations, and eco-conscious packaging, Bloom & Glow ensures that beauty never comes at the cost of your well-being or the environment. Clean beauty is not just a trend—it is a commitment to healthier skin, conscious choices, and a more natural, confident glow.",
+      img1: "all photos/banner img s3.jpg",
+      img2: "products-images/beauty-care.avif"
+    },
+    3: {
+      banner: "products-images/sunscreen1.avif",
+      title: "5 Daily Habits That Make Your Skin Glow Naturally",
+      text1: "Glowing skin is not achieved overnight—it is the result of consistent daily habits that support your skin’s health from within. Simple practices like staying hydrated, maintaining a balanced diet, and following a gentle skincare routine help improve skin texture and brightness over time. When these habits are followed regularly, they strengthen the skin barrier and enhance its natural radiance.",
+      text2: "Getting enough sleep allows the skin to repair and renew itself, while daily sunscreen use protects against premature aging and pigmentation. Being gentle with your skin, avoiding over-exfoliation, and choosing clean, effective skincare products further support long-term skin health. Together, these everyday habits create a sustainable glow that looks natural, healthy, and long-lasting.",
+      img1: "products-images/cleanser2.avif",
+      img2: "products-images/lotion6.avif"
+    }
+  };
+
+  // Main dynamic loading function
+  function loadBlog(id) {
+    document.querySelector(".top-banner img").src = blogData[id].banner;
+    document.querySelector(".bd-title").innerText = blogData[id].title;
+
+    const paras = document.querySelectorAll(".bd-text");
+    paras[0].innerText = blogData[id].text1;
+    paras[1].innerText = blogData[id].text2;
+
+    const imgs = document.querySelectorAll(".bd-two-images img");
+    imgs[0].src = blogData[id].img1;
+    imgs[1].src = blogData[id].img2;
+
+    window.scrollTo({ top: 200, behavior: "smooth" });
+  }
+</script>
+
+
+          
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+ <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>
+

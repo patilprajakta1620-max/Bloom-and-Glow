@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3">BLOOM<small>AND GLOW</small></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+
+
+<!-- HERO -->
+<section class="hero-glow">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 hero-text">
+        <h1>More Than Beauty.<br><span>It’s a Glow Ritual.</span></h1>
+        <p>
+          Bloom & Glow is where skincare, self-love, and confidence beautifully come together.
+  We believe beauty should feel effortless, personal, and deeply comforting.
+  Every product is thoughtfully designed to fit into real routines, not complicated steps.
+  Our formulas focus on nourishing your skin while enhancing its natural glow.
+  No filters, no pressure — just honest care that makes you feel good every day.
+  Because when your skin feels healthy, confidence follows naturally.
+        </p>
+        <a href="Products.html" class="btn hero-btn">Explore Collection</a>
+      </div>
+
+      <div class="col-md-6 hero-img">
+        <img src="products-images/beauty-care.avif" alt="Bloom & Glow">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STORY -->
+<section class="story-section">
+  <div class="container">
+    <div class="story-card text-center">
+      <h2>Our Story</h2>
+      <p>
+        Bloom & Glow was born from a simple yet powerful belief —  
+  <strong>beauty should never feel complicated.</strong>
+  <br><br>
+  In a world filled with filters, fast trends, and unrealistic standards,
+  we felt the need to slow things down.
+  We wanted to create products that feel honest, gentle, and deeply personal.
+  Skincare that listens to your skin instead of changing it.
+  Every formula is inspired by real people, real routines, and real needs.
+  Because true beauty begins when you feel comfortable in your own skin.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="values-section">
+  <div class="container">
+    <h2 class="section-title">What We Believe In</h2>
+
+    <div class="row g-4 mt-3">
+      <div class="col-md-4">
+        <div class="glass-box">
+          <h4>Clean Beauty</h4>
+          <p>We believe skincare should be kind, gentle, and transparent.
+  Every ingredient is thoughtfully chosen to support skin health.
+  No harsh chemicals, no unnecessary additives — only what your skin truly needs.
+  Our formulas focus on balance, nourishment, and long-term care.
+  Because clean beauty isn’t a trend for us, it’s a responsibility.
+  Healthy skin starts with honest ingredients and mindful formulation.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="glass-box">
+          <h4>Everyday Glow</h4>
+          <p>Glow shouldn’t be reserved for special occasions.
+  Our products are designed for everyday use and real-life routines.
+  Simple steps, effective results, and skin that feels comfortable all day.
+  No complicated layers or confusing methods.
+  Just easy, reliable skincare that fits into your lifestyle.
+  Because confidence grows when your routine feels natural and stress-free.</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="glass-box">
+          <h4>Real Confidence</h4>
+          <p>True beauty goes far beyond appearance.
+  It begins with feeling comfortable, confident, and at ease in your own skin.
+  Our mission is to support confidence, not perfection.
+  We celebrate individuality, real skin, and natural textures.
+  Bloom & Glow exists to remind you that you are already enough.
+  When you feel good inside, your glow shows on the outside.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- IMAGE STRIP -->
+<section class="image-strip">
+  <img src="products-images/lotion5.avif">
+  <img src="products-images/cleanser1.avif">
+  <img src="products-images/serum2.avif">
+</section>
+
+<!-- PROMISE -->
+<section class="promise-section">
+  <div class="container">
+    <div class="promise-box">
+      <h2>Our Promise</h2>
+      <p>
+        Every Bloom & Glow product is crafted with intention, care, and love.
+  We carefully test each formula to ensure it feels gentle, soothing, and effective.
+  Our goal is never to cover your skin, but to support it.
+  We believe skincare should enhance what you already have,
+  not change who you are.
+  From ingredients to packaging, every detail reflects our commitment to quality.
+  Because your skin deserves respect, comfort, and confidence every single day.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+  <div class="container text-center">
+    <h2>Your Glow Journey Starts Here ✨</h2>
+    <p>Beauty that feels like you. Confidence that lasts.</p>
+    <a href="Contact.html" class="btn hero-btn">Shop Now</a>
+  </div>
+</section>
+
+</body>
+</html>
+
+
+
+
+<!--footer  -->
+
+ <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>

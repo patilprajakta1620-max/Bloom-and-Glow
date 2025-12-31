@@ -1,0 +1,424 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3">BLOOM<small>AND GLOW</small></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- =================== END NAVBAR =================== -->
+
+
+  
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Testimonials</title>
+  <link rel="stylesheet" href="testimonial.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<!-- BANNER -->
+<section class="page-banner">
+  <div class="banner-content">
+    <h1>Testimonial</h1>
+    <a href="index.html">Home/</a>
+    <a href="Pages.html">Pages/</a>
+    <a href="Testimonial.html">Testimonial</a>
+    
+  </div>
+</section>
+
+
+
+
+
+<!-- TESTIMONIAL SECTION -->
+<section class="testimonial-section">
+
+  <!-- CENTER TITLE -->
+  <div class="section-heading">
+    <span>Our Testimonial</span>
+    <h2>Our Client Saying!</h2>
+  </div>
+
+  <!-- SLIDER -->
+  <div class="testimonial-slider">
+    <div class="testimonial-track">
+
+      <!-- SLIDE 1 -->
+      <div class="testimonial-group">
+        <div class="testimonial-card">
+          <p>“The packaging looks premium and the products feel thoughtfully made. The moisturizer keeps my skin soft and comfortable all day long.”</p>
+          <div class="client-info">
+            <img src="all photos/test1.jpg">
+            <div>
+              <h4>Nisha Verma</h4>
+              <small>Interior Stylist (Jaipur)</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“Bloom & Glow products are easy to use and perfect for busy mornings. The toner refreshes my skin instantly and feels very soothing.”</p>
+          <div class="client-info">
+            <img src="all photos/test2.jpg">
+            <div>
+              <h4>Kritika Sharma</h4>
+              <small>Media Planner </small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“I appreciate the clean and skin-friendly approach of the brand. My skin feels calm, nourished, and naturally healthy.”</p>
+          <div class="client-info">
+            <img src="all photos/test3.avif">
+            <div>
+              <h4>Pallavi Nair</h4>
+              <small>Wellness Coach (Kochi)</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 2 -->
+      <div class="testimonial-group">
+        <div class="testimonial-card">
+          <p>“Bloom & Glow products feel extremely gentle on the skin. The cleanser and moisturizer fit perfectly into my daily routine. My skin feels fresh and balanced throughout the day.”</p>
+          <div class="client-info">
+            <img src="all photos/test4.avif">
+            <div>
+              <h4>Ananya Roy</h4>
+              <small>MBA Student</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“I love how lightweight and non-greasy the serum is. It absorbs quickly and gives a natural glow without feeling heavy. Definitely a repeat purchase.”</p>
+          <div class="client-info">
+            <img src="all photos/test5.jpg">
+            <div>
+              <h4>Riya Malhotra</h4>
+              <small>Fashion Buyer (Delhi)</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“The eye cream made a noticeable difference within weeks. My under-eye area feels smoother and more hydrated. Perfect for long workdays.”</p>
+          <div class="client-info">
+            <img src="all photos/test6.jpg">
+            <div>
+              <h4>Simran Kaur</h4>
+              <small>HR Professional (Chandigarh)</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- SLIDE 3 -->
+      <div class="testimonial-group">
+        <div class="testimonial-card">
+          <p>“The products blend beautifully into a simple skincare routine. Everything feels balanced, gentle, and thoughtfully designed.”</p>
+          <div class="client-info">
+            <img src="all photos/test7.jpg">
+            <div>
+              <h4>Tanvi Khanna</h4>
+              <small>Lifestyle Blogger</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“I was impressed with the quality and texture of the products. The serum feels clean and non-sticky, which is great for everyday use.”</p>
+          <div class="client-info">
+            <img src="all photos/test8.avif">
+            <div>
+              <h4>Rima Iyer</h4>
+              <small>Product Designer (Bengaluru)</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p>“The cleanser works really well for combination skin. It removes dirt without drying the skin. Simple, effective, and well-formulated.”</p>
+          <div class="client-info">
+            <img src="all photos/test9.jpg">
+            <div>
+              <h4>Reva Mehta</h4>
+              <small>Startup Consultant (Ahmedabad)</small>
+              <div class="stars">★★★★★</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+<!-- SLIDER SCRIPT -->
+<script>
+  const track = document.querySelector(".testimonial-track");
+  const slides = document.querySelectorAll(".testimonial-group");
+  let index = 0;
+
+  setInterval(() => {
+    index = (index + 1) % slides.length;
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }, 4000);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+  
+
+   <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>

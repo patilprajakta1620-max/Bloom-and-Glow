@@ -1,0 +1,852 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="products-page">
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3">BLOOM<small>AND GLOW</small></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- =================== END NAVBAR =================== --> 
+
+
+
+
+
+
+
+  <!-- HERO -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <h1 class="mb-0">All Products</h1>
+          <p class="mb-0 text-muted">Curated beauty picks — cleanser to setting spray for every routine ✨</p>
+        </div>
+        <div class="col-md-4 text-md-end">
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb justify-content-md-end mb-0">
+              <li class="breadcrumb-item"><a class="nav-link p-0" href="index.html">Home</a></li>
+              <li class="breadcrumb-item active" aria-current="page">Products</li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- MAIN -->
+  <main class="py-4">
+    <div class="container">
+      <div class="row g-4">
+        <!-- FILTERS -->
+        <aside class="col-lg-3">
+          <div class="shop-sidebar">
+            <h5 class="filter-title">Filters</h5>
+
+            <div class="mb-3">
+              <label class="form-label">Search</label>
+              <input id="searchInput" type="search" class="form-control" placeholder="Search products...">
+            </div>
+
+            <div class="mb-3">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <label class="form-label mb-0">Category</label>
+                <small class="text-muted" id="catCount">0</small>
+              </div>
+
+              <div id="categoriesWrap" class="list-group list-group-flush filter-list"></div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Price</label>
+              <select id="priceRange" class="form-select">
+                <option value="all" selected>All prices</option>
+                <option value="0-300">Under ₹300</option>
+                <option value="300-600">₹300 — ₹600</option>
+                <option value="600-1000">₹600 — ₹1000</option>
+                <option value="1000+">₹1000+</option>
+</select>
+
+            </div>
+
+            <div class="d-grid">
+              <button id="clearFilters" class="btn btn-outline-pink">Clear filters</button>
+            </div>
+          </div>
+        </aside>
+
+        <!-- PRODUCTS -->
+        <section class="col-lg-9">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-3 mb-3 shop-actions">
+            <div class="d-flex gap-2 align-items-center">
+              <span class="tag">FREE SHIP ₹999+</span>
+              <span class="tag">CRUELTY FREE</span>
+            </div>
+            <div class="d-flex gap-2 align-items-center">
+              <label class="me-2 mb-0" for="sortBy">Sort</label>
+              <select id="sortBy" class="form-select form-select-sm">
+                <option value="featured">Featured</option>
+                <option value="price-asc">Price: Low → High</option>
+                <option value="price-desc">Price: High → Low</option>
+                <option value="new">Newest</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="productsGrid" class="row g-3"></div>
+
+          <!-- pagination रिकामी ठेवली आहे -->
+          <nav class="mt-4" aria-label="Products pagination">
+            <ul id="pagination" class="pagination justify-content-center mb-0"></ul>
+          </nav>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <!-- QUICK VIEW MODAL -->
+  <div class="modal fade" id="quickViewModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body p-3">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <img id="modalMainImg" src="" alt="Product" class="img-fluid rounded">
+              <div id="modalThumbs" class="d-flex gap-2 mt-2"></div>
+            </div>
+            <div class="col-md-6">
+              <h3 id="modalTitle" class="mb-1">Product Name</h3>
+              <div class="mb-2">
+                <span id="modalPrice" class="prod-price">$0.00</span>
+                <small class="text-muted ms-2">• 30ml</small>
+              </div>
+              <p id="modalShortDesc" class="text-muted"></p>
+
+              <div class="mb-3">
+                <label class="form-label">Quantity</label>
+                <div class="input-group qty-input">
+                  <button class="btn btn-outline-secondary" id="qtyMinus" type="button">−</button>
+                  <input id="qtyInput" type="number" class="form-control text-center" value="1" min="1">
+                  <button class="btn btn-outline-secondary" id="qtyPlus" type="button">+</button>
+                </div>
+              </div>
+
+              <div class="d-flex gap-2">
+                <button id="addToCartBtn" class="btn btn-pink">Add to cart</button>
+                <button class="btn btn-outline-pink" data-bs-dismiss="modal">Close</button>
+              </div>
+
+              <hr>
+              <h6 class="mb-1">Ingredients</h6>
+              <p class="small text-muted" id="modalIngredients"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- TOAST -->
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index:1200;">
+    <div id="cartToast" class="toast align-items-center text-bg-light border-0">
+      <div class="d-flex">
+        <div class="toast-body">Added to cart ✓</div>
+        <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast"></button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mini-footer">© <span id="yearFoot"></span> Bloom & Glow</footer>
+
+  <script>document.getElementById('yearFoot').textContent = new Date().getFullYear();</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- PAGE JS -->
+  <script>
+   const asset = f => {
+  if (!f) return 'products-images/image.jpg';
+
+  // if already has extension
+  if (f.includes('.')) {
+    // first try products-images, fallback to all photos
+    return `products-images/${encodeURI(f)}`;
+  }
+
+  // safety fallback
+  return `products-images/${encodeURI(f)}.jpg`;
+};
+
+
+    /* FILTER मधले categories + नवे तीन */
+    const allowedCategories = [
+      'cleanser','toner','serum','moisturizer','sunscreen','eye-cream',
+      'foundation','concealer','highlighter','lotion','blush',
+      'compact-powder','eyeshadows','eyeliner','mascara','lipsticks',
+      'lip-balm','brushes','nailpolish','perfumes'
+    ];
+
+    /* PRODUCTS
+       - All view साठी पहिली 20 items: 101,201,301,...,2001
+       - प्रत्येक category ला 3 products (…01, …02, …03)
+    */
+    const products = [
+      /* MAIN 20 (All view वर येणारे ) */
+
+      // Cleanser
+      { id:101, title:'Gentle Cream Cleanser', price:249, cat:'cleanser',
+        images:['cleanser4.avif','cleanser1.avif','cleanser2.avif'],
+        desc:'Cream cleanser for sensitive skin.', ingredients:'Glycerin, ceramides.' },
+
+      // Toner
+      { id:201, title:'Hydrating Toner', price:299, cat:'toner',
+        images:['toner1.avif','toner2.avif','toner3.avif'],
+        desc:'Hydrating alcohol-free toner.', ingredients:'Rose water, aloe.' },
+
+      // Serum
+      { id:301, title:'Vitamin C Serum', price:449, cat:'serum',
+        images:['serum.avif','serum1.avif','serum2.avif'],
+        desc:'Brightening vitamin C serum.', ingredients:'Ascorbic acid, ferulic acid.' },
+
+      // Moisturizer
+      { id:401, title:'Daily Moisturizer', price:599, cat:'moisturizer',
+        images:['moisturizer.avif','moisturizer1.avif','moisturizer2.avif'],
+        desc:'Lightweight everyday moisturizer.', ingredients:'Squalane, glycerin.' },
+
+      // Sunscreen
+      { id:501, title:'Mineral SPF 50 Sunscreen', price:699, cat:'sunscreen',
+        images:['sunscreen.avif','sunscreen1.avif','sunscreen2.avif'],
+        desc:'Non-greasy mineral SPF 50.', ingredients:'Zinc oxide, titanium dioxide.' },
+
+      // Eye cream
+      { id:601, title:'Depuff Eye Cream', price:399, cat:'eye-cream',
+        images:['eye cream1.avif','eye cream3.avif','eye cream4.avif'],
+        desc:'Depuffing under-eye cream.', ingredients:'Caffeine, peptides.' },
+
+      // Foundation
+      { id:701, title:'Liquid Foundation', price:499, cat:'foundation',
+        images:['foundation1.avif','foundation2.avif','foundation3.avif'],
+        desc:'Buildable liquid foundation.', ingredients:'Pigments, emollients.' },
+
+      // Concealer
+      { id:801, title:'Full Cover Concealer', price:429, cat:'concealer',
+        images:['concealer.avif','concealer1.avif','concealer2.avif'],
+        desc:'Full-coverage concealer.', ingredients:'Pigments, film formers.' },
+
+      // Highlighter
+      { id:901, title:'Powder Shimmer Highlighter', price:329, cat:'highlighter',
+        images:['highlighter.jpg','highlighter1.jpg','highlighter2.jpg'],
+        desc:'Liquid highlighter for dewy glow.', ingredients:'Mica, emollients.' },
+
+      // Lotion
+      { id:1001, title:'Hydrating Lotion', price:299, cat:'lotion',
+        images:['lotion.avif','lotion1.avif','lotion2.avif'],
+        desc:'All-over hydrating body lotion.', ingredients:'Glycerin, shea butter.' },
+
+      // Blush
+      { id:1101, title:'Cream Blush', price:449, cat:'blush',
+        images:['blush.jpg','blush1.jpg','blush2.jpg'],
+        desc:'Blendable cream blush.', ingredients:'Pigments, oils.' },
+
+      // Compact powder
+      { id:1201, title:'Matte Compact', price:649, cat:'compact-powder',
+        images:['compact powder.jpg','compact1.jpg','compact2.jpg'],
+        desc:'Matte compact setting powder.', ingredients:'Silica, talc-free blend.' },
+
+      // Eyeshadows
+      { id:1301, title:'Neutral Eyeshadow Palette', price:699, cat:'eyeshadows',
+        images:['eyeshadow.avif','eyeshadow1.avif','eyeshadow2.avif'],
+        desc:'12-shade neutral eyeshadow palette.', ingredients:'Pressed pigments.' },
+
+      // Eyeliner
+      { id:1401, title:'Precision Liquid Liner', price:499, cat:'eyeliner',
+        images:['eyeliner.jpg','eyeliner1.jpg','eyeliner2.jpg'],
+        desc:'Smudge-proof liquid eyeliner.', ingredients:'Waxes, film formers.' },
+
+      // Mascara
+      { id:1501, title:'Volumizing Mascara', price:499, cat:'mascara',
+        images:['muscara.jpg','muscara1.jpg','muscara2.jpg'],
+        desc:'Volumizing & lengthening mascara.', ingredients:'Waxes, polymers.' },
+
+      // Lipstick
+      { id:1601, title:'Gloss Finish Lipstick', price:799, cat:'lipsticks',
+        images:['lipstick4.jpg','lipstick2.jpg','lipstick.jpg'],
+        desc:'Creamy classic red lipstick.', ingredients:'Oils, shea butter.' },
+
+      // Lip balm
+      { id:1701, title:'Tinted Lip Balm', price:199, cat:'lip-balm',
+        images:['lip balm1.jpg','lip balm2.jpg','lip balm.jpg'],
+        desc:'Sheer tinted hydrating lip balm.', ingredients:'Oils, SPF.' },
+
+      // Brushes
+      { id:1801, title:'Essential Brush Set', price:299, cat:'brushes',
+        images:['brushes.jpg','brushes1.jpg','brushes2.jpg'],
+        desc:'Everyday face brush set.', ingredients:'Synthetic bristles.' },
+
+      // Nailpolish
+      { id:1901, title:'Classic Nude Nailpolish', price:229, cat:'nailpolish',
+        images:['nail polish2.jpg','nail polish3.jpg','nail polish4.jpg'],
+        desc:'Chip-resistant nude nail shade.', ingredients:'Long-wear formula.' },
+
+      // Perfumes
+      { id:2001, title:'Blossom Eau De Parfum', price:1080, cat:'perfumes',
+        images:['perfumes.jpg','perfumes1.jpg','perfumes2.jpg'],
+        desc:'Soft floral everyday perfume.', ingredients:'Fragrance blend.' },
+
+      /* बाकी 2 sub-products per category (filter view साठी) */
+
+      // Cleanser2
+      { id:102, title:'Oil Cleanser', price:299, cat:'cleanser',
+        images:['cleanser3.avif','cleanser4.avif','beauty-care.avif'],
+        desc:'Gentle foaming face wash.', ingredients:'Aloe, glycerin.' },
+      { id:103, title:'Foam Cleanser', price:229, cat:'cleanser',
+        images:['cleanser2.avif','cleanser3.avif','cleanser4.avif'],
+        desc:'Makeup-melting cleansing oil.', ingredients:'Squalane, jojoba oil.' },
+
+      // Toner
+      { id:202, title:'Exfoliating Toner', price:229, cat:'toner',
+        images:['toner3.avif','toner4.avif','toner1.avif'],
+        desc:'Mild AHA exfoliating toner.', ingredients:'Glycolic acid.' },
+      { id:203, title:'Balancing Toner', price:249, cat:'toner',
+        images:['toner2.avif','toner3.avif','toner4.avif'],
+        desc:'Oil-controlling toner.', ingredients:'Niacinamide.' },
+
+      // Serum
+      { id:302, title:'Hyaluronic Serum', price:499, cat:'serum',
+        images:['serum3.avif','serum4.avif','serum1.avif'],
+        desc:'Hydration booster serum.', ingredients:'Hyaluronic acid.' },
+      { id:303, title:'Night Repair Serum', price:549, cat:'serum',
+        images:['serum1.avif','serum3.avif','serum4.avif'],
+        desc:'Overnight repair serum.', ingredients:'Retinol, peptides.' },
+
+      // Moisturizer
+      { id:402, title:'Gel Cream moisturizer', price:999, cat:'moisturizer',
+        images:['moisturizer3.avif','lotion.avif','lotion1.avif'],
+        desc:'Rich night cream.', ingredients:'Peptides, ceramides.' },
+      { id:403, title:'Night Repair Moisturizer', price:799, cat:'moisturizer',
+        images:['lotion2.avif','lotion3.avif','lotion4.avif'],
+        desc:'Oil-free gel moisturizer.', ingredients:'Aloe, hyaluronic acid.' },
+
+      // Sunscreen
+      { id:502, title:'Tinted SPF 30', price:499, cat:'sunscreen',
+        images:['sunscreen2.avif','sunscreen1.avif','sunscreen.avif'],
+        desc:'Tinted everyday sunscreen.', ingredients:'Mineral SPF blend.' },
+      { id:503, title:'Water Resistant Sunscreen', price:449, cat:'sunscreen',
+        images:['sunscreen1.avif','sunscreen2.avif','sunscreen.avif'],
+        desc:'Easy spray-on protection.', ingredients:'Humectants.' },
+
+      // Eye-cream
+      { id:602, title:'Brightening Eye Gel', price:329, cat:'eye-cream',
+        images:['eye cream2.avif','eye cream3.avif','eye cream.avif'],
+        desc:'Brightening eye gel.', ingredients:'Vitamin C, caffeine.' },
+      { id:603, title:'Firming Eye Cream', price:329, cat:'eye-cream',
+        images:['eye cream3.avif','eye cream4.avif','eye cream2.avif'],
+        desc:'Firming eye cream.', ingredients:'Peptides.' },
+
+      // Foundation
+      { id:702, title:'Liquid Foundation - Medium', price:699, cat:'foundation',
+        images:['foundation3.avif','foundation4.avif','foundation1.avif'],
+        desc:'Medium shade foundation.', ingredients:'Pigments, emollients.' },
+      { id:703, title:'Matte Foundation', price:799, cat:'foundation',
+        images:['foundation2.avif','foundation3.avif','foundation4.avif'],
+        desc:'Long-wear matte foundation.', ingredients:'Absorbing powders.' },
+
+      // Concealer
+      { id:802, title:'Brightening Concealer', price:499, cat:'concealer',
+        images:['concealer1.avif','concealer2.avif','beauty-care.avif'],
+        desc:'Under-eye brightener.', ingredients:'Light diffusers.' },
+      { id:803, title:'Longwear Concealer', price:499, cat:'concealer',
+        images:['concealer2.avif','concealer.avif','beauty-care.avif'],
+        desc:'Longlasting concealer.', ingredients:'Film formers.' },
+
+      // Highlighter
+      { id:902, title:'Powder Highlighter', price:699, cat:'highlighter',
+        images:['highlighter2.jpg','highlighter3.jpg','highlighter4.jpg'],
+        desc:'Soft shimmer powder.', ingredients:'Mica.' },
+      { id:903, title:'Stick Highlighter', price:599, cat:'highlighter',
+        images:['highlighter3.jpg','highlighter2.jpg','highlighter4.jpg'],
+        desc:'Easy highlighter stick.', ingredients:'Emollients.' },
+
+      // Lotion
+      { id:1002, title:'Soothing Body Lotion', price:299, cat:'lotion',
+        images:['lotion1.avif','lotion2.avif','lotion3.avif'],
+        desc:'Calming body lotion.', ingredients:'Aloe, chamomile.' },
+      { id:1003, title:'Firming Body Lotion', price:399, cat:'lotion',
+        images:['lotion6.avif','lotion7.avif','lotion2.avif'],
+        desc:'Firming body lotion.', ingredients:'Caffeine.' },
+
+      // Blush
+      { id:1102, title:'Powder Blush', price: 549, cat:'blush',
+        images:['blush2.jpg','blush1.jpg','blush1.jpg'],
+        desc:'Matte powder blush.', ingredients:'Mica, pigments.' },
+      { id:1103, title:'Tinted Blush', price:749, cat:'blush',
+        images:['blush1.jpg','blush2.jpg','blush.jpg'],
+        desc:'Tinted gel blush.', ingredients:'Glycerin.' },
+
+      // Compact-powder
+      { id:1202, title:'Translucent Powder', price:699, cat:'compact-powder',
+        images:['compact1.jpg','compact powder.jpg','compact2.jpg'],
+        desc:'No-flashback translucent powder.', ingredients:'Silica.' },
+      { id:1203, title:'Pressed Setting Powder', price:799, cat:'compact-powder',
+        images:['compact2.jpg','compact powder.jpg','compact1.jpg'],
+        desc:'Pressed setting powder.', ingredients:'Absorbents.' },
+
+      // Eyeshadows
+      { id:1302, title:'Pink Eyeshadow Palette', price:749, cat:'eyeshadows',
+        images:['eyeshadow1.avif','eyeshadow2.avif','eyeshadow3.avif'],
+        desc:'Rosy pink tones.', ingredients:'Pressed pigments.' },
+      { id:1303, title:'Bold Eyeshadow Palette', price:749, cat:'eyeshadows',
+        images:['eyeshadow2.avif','eyeshadow3.avif','eyeshadow1.avif'],
+        desc:'Vibrant bold colors.', ingredients:'Pigments.' },
+
+      // Eyeliner
+      { id:1402, title:'Gel Liner', price:499, cat:'eyeliner',
+        images:['eyeliner1.jpg','eyeliner2.jpg','eyeliner.jpg'],
+        desc:'Smooth gel eyeliner.', ingredients:'Waxes.' },
+      { id:1403, title:'Pencil Liner', price:499, cat:'eyeliner',
+        images:['eyeliner2.jpg','eyeliner1.jpg','eyeliner.jpg'],
+        desc:'Soft pencil liner.', ingredients:'Waxes.' },
+
+      // Mascara
+      { id:1502, title:'Lengthening Mascara', price:459, cat:'mascara',
+        images:['muscara2.jpg','muscara.jpg','muscara1.jpg'],
+        desc:'Lengthening mascara.', ingredients:'Polymers.' },
+      { id:1503, title:'Waterproof Mascara', price:529, cat:'mascara',
+        images:['muscara1.jpg','muscara2.jpg','muscara.jpg'],
+        desc:'Waterproof formula.', ingredients:'Film formers.' },
+
+      // Lipsticks
+      { id:1602, title:'Nude Everyday Lipstick', price:899, cat:'lipsticks',
+        images:['lipstick1.jpg','lipstick2.jpg','lipstick.jpg'],
+        desc:'Comfortable nude shade.', ingredients:'Oils, vitamin E.' },
+      { id:1603, title:'Bright Pink Lipstick', price:999, cat:'lipsticks',
+        images:['lipstick.jpg','lipstick2.jpg','lipstick1.jpg'],
+        desc:'Vibrant pink lipstick.', ingredients:'Pigments.' },
+
+      // Lip-balm
+      { id:1702, title:'Hydrating Lip Balm', price:299, cat:'lip-balm',
+        images:['lip balm.jpg','lip balm1.jpg','lip balm.3jpg'],
+        desc:'Hydrating clear lip balm.', ingredients:'Shea butter.' },
+      { id:1703, title:'SPF Lip Balm', price:299, cat:'lip-balm',
+        images:['lip balm2.jpg','lip balm3.jpg','lip balm1.jpg'],
+        desc:'Lip balm with SPF.', ingredients:'Zinc oxide.' },
+
+      // Brushes
+      { id:1802, title:'Eye Brush Trio', price:759, cat:'brushes',
+        images:['brushes1.jpg','brushes2.jpg','brushes3.jpg'],
+        desc:'Three essential eye brushes.', ingredients:'Soft synthetic bristles.' },
+      { id:1803, title:'Face & Cheek Brush', price:759, cat:'brushes',
+        images:['brushes2.jpg','brushes3.jpg','brushes1.jpg'],
+        desc:'Blush and bronzer brush.', ingredients:'Vegan bristles.' },
+
+      // Nailpolish
+      { id:1902, title:'Bright Red Nailpolish', price:299, cat:'nailpolish',
+        images:['nail polish3.jpg','nail polish5.jpg','nail polish4.jpg'],
+        desc:'Classic bright red polish.', ingredients:'Long-wear pigment.' },
+      { id:1903, title:'Glitter Top Coat', price:299, cat:'nailpolish',
+        images:['nail polish.jpg','nail polish3.jpg','nail polish5.jpg'],
+        desc:'Sparkly glitter top coat.', ingredients:'Glitter blend.' },
+
+      // Perfumes
+      { id:2002, title:'Vanilla Mist Perfume', price:999, cat:'perfumes',
+        images:['perfumes1.jpg','perfumes2.jpg','perfumes3.jpg'],
+        desc:'Warm vanilla fragrance.', ingredients:'Fragrance oils.' },
+      { id:2003, title:'Fresh Citrus Perfume', price:1229, cat:'perfumes',
+        images:['perfumes5.jpg','perfumes2.jpg','perfumes1.jpg'],
+        desc:'Fresh citrus everyday scent.', ingredients:'Citrus blend.' }
+    ];
+
+    // CONFIG
+    const perPageAll = 20;   // All view -> फक्त 20 cards
+    const perCategory = 3;   // प्रत्येक category view -> 3 cards
+
+    let state = { page:1, cat:'all', price:'all', q:'', sort:'featured' };
+    const grid = document.getElementById('productsGrid');
+    const pagination = document.getElementById('pagination');
+    const categoriesWrap = document.getElementById('categoriesWrap');
+    const catCountEl = document.getElementById('catCount');
+
+    function buildCategoryButtons(){
+      categoriesWrap.innerHTML = '';
+
+      const allBtn = document.createElement('button');
+      allBtn.className = 'list-group-item list-group-item-action category-btn active';
+      allBtn.dataset.cat = 'all';
+      allBtn.textContent = 'All';
+      categoriesWrap.appendChild(allBtn);
+
+      allowedCategories.forEach(cat=>{
+        const btn = document.createElement('button');
+        btn.className = 'list-group-item list-group-item-action category-btn';
+        btn.dataset.cat = cat;
+        btn.textContent = cat.replace(/-/g,' ');
+        categoriesWrap.appendChild(btn);
+      });
+
+      catCountEl.textContent = allowedCategories.length;
+
+      categoriesWrap.querySelectorAll('.category-btn').forEach(btn=>{
+        btn.addEventListener('click', ()=>{
+          categoriesWrap.querySelectorAll('.category-btn').forEach(b=>b.classList.remove('active'));
+          btn.classList.add('active');
+          state.cat = btn.dataset.cat;
+          state.page = 1;
+          renderProducts();
+        });
+      });
+    }
+
+    function escapeHtml(s){
+      return String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;');
+    }
+
+    function renderProducts(){
+      let list = products.filter(p=>{
+        if(state.cat !== 'all' && p.cat !== state.cat) return false;
+
+        if(state.price !== 'all'){
+          if(state.price==='0-300' && !(p.price < 300)) return false;
+          if(state.price==='300-600' && !(p.price >= 300 && p.price <= 600)) return false;
+          if(state.price==='600-1000' && !(p.price > 600 && p.price <= 1000)) return false;
+          if(state.price==='1000+' && !(p.price > 1000)) return false;
+
+        }
+
+        if(state.q && !p.title.toLowerCase().includes(state.q.toLowerCase())) return false;
+        return true;
+      });
+
+      if(state.sort==='price-asc') list.sort((a,b)=>a.price-b.price);
+      if(state.sort==='price-desc') list.sort((a,b)=>b.price-a.price);
+      if(state.sort==='new') list.sort((a,b)=>b.id-a.id);
+
+      // category view -> फक्त पहिली 3 products
+      if(state.cat !== 'all') list = list.slice(0, perCategory);
+
+      const perPage = (state.cat==='all') ? perPageAll : perCategory;
+
+      // SINGLE PAGE: नेहमी पहिली perPage items
+      const pageItems = list.slice(0, perPage);
+
+      grid.innerHTML = pageItems.map(p=>`
+        <div class="col-6 col-md-4 col-lg-3">
+          <article class="product-card">
+            <img src="${asset(p.images?.[0]||'beauty-care.avif')}" alt="${escapeHtml(p.title)}">
+            <div class="prod-body">
+              <h4 class="prod-title">${escapeHtml(p.title)}</h4>
+              <div class="small text-muted mb-1">${escapeHtml(p.cat.replace(/-/g,' '))}</div>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="prod-price">₹${Math.round(p.price)}</div>
+                <div><button class="btn btn-sm btn-outline-pink quick-view-btn" data-id="${p.id}">Quick view</button></div>
+              </div>
+            </div>
+          </article>
+        </div>
+      `).join('');
+
+      // pagination नाही
+      pagination.innerHTML = '';
+    }
+
+    buildCategoryButtons();
+    renderProducts();
+
+    document.getElementById('priceRange').addEventListener('change',e=>{
+      state.price=e.target.value; state.page=1; renderProducts();
+    });
+
+    document.getElementById('clearFilters').addEventListener('click',()=>{
+      state={page:1,cat:'all',price:'all',q:'',sort:'featured'};
+      document.getElementById('searchInput').value='';
+      document.getElementById('priceRange').value='all';
+      document.getElementById('sortBy').value='featured';
+      buildCategoryButtons();
+      renderProducts();
+    });
+
+    document.getElementById('searchInput').addEventListener('input',e=>{
+      state.q=e.target.value.trim(); state.page=1; renderProducts();
+    });
+
+    document.getElementById('sortBy').addEventListener('change',e=>{
+      state.sort=e.target.value; renderProducts();
+    });
+
+    // quick view
+    document.body.addEventListener('click', e=>{
+      const q = e.target.closest('.quick-view-btn');
+      if(!q) return;
+      const id = Number(q.dataset.id);
+      const p = products.find(x=>x.id===id);
+      if(!p) return;
+
+      document.getElementById('modalTitle').textContent = p.title;
+      document.getElementById('modalPrice').textContent = `₹${Math.round(p.price)}`;
+      document.getElementById('modalMainImg').src = asset(p.images[0]||'beauty-care.avif');
+      document.getElementById('modalShortDesc').textContent = p.desc||'';
+      document.getElementById('modalIngredients').textContent = p.ingredients||'';
+
+      const thumbs = document.getElementById('modalThumbs');
+      thumbs.innerHTML='';
+      (p.images||['beauty-care.avif']).slice(0,3).forEach(fn=>{
+        const img=document.createElement('img');
+        img.src=asset(fn);
+        img.className='gallery-thumb';
+        img.style.cursor='pointer';
+        img.addEventListener('click',()=> document.getElementById('modalMainImg').src=asset(fn));
+        thumbs.appendChild(img);
+      });
+
+      const modal = new bootstrap.Modal(document.getElementById('quickViewModal'));
+      document.getElementById('qtyInput').value = 1;
+      modal.show();
+    });
+
+    document.getElementById('qtyPlus')?.addEventListener('click',()=>{
+      const i=document.getElementById('qtyInput'); i.value=Number(i.value||1)+1;
+    });
+    document.getElementById('qtyMinus')?.addEventListener('click',()=>{
+      const i=document.getElementById('qtyInput'); i.value=Math.max(1,Number(i.value||1)-1);
+    });
+
+    const cartToast = new bootstrap.Toast(document.getElementById('cartToast'),{delay:1500});
+    document.getElementById('addToCartBtn')?.addEventListener('click',()=>{ cartToast.show(); });
+  </script>
+</body>
+</html>
+
+
+
+
+
+ <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>
+

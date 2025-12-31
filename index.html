@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3"><a href="index.html">BLOOM<small>AND GLOW</small></a></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+
+
+
+
+  <!-- HERO / BANNER with 2 slides; each slide contains 3 images side-by-side -->
+  <section class="hero py-4">
+    <div class="container">
+
+      <div id="tripleCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+
+          <!-- SLIDE 1 -->
+          <div class="carousel-item active">
+            <div class="triple-row row gx-3">
+              <div class="col-md-4">
+                <figure class="img-card"><img src="products-images/serum.avif" alt="tool" /></figure>
+              </div>
+              <div class="col-md-4">
+                <figure class="img-card"><img src="all photos/banner img 2.jpg" alt="model" /></figure>
+              </div>
+              <div class="col-md-4">
+                <figure class="img-card"><img src="all photos/img 2.jpg" alt="products" /></figure>
+              </div>
+            </div>
+
+            <!-- overlay content below images (centered) -->
+            <div class="carousel-caption-custom text-center">
+              <h2 class="hero-title">NEW SKINCARE <span class="script">Arrivals</span></h2>
+              <p class="hero-sub">Sensitive skin moisturizers &amp; cleansers — gentle formulas for daily glow.</p>
+              <a class="btn btn-ghost-outline" href="Products.html">SHOP NOW</a>
+            </div>
+          </div>
+
+          <!-- SLIDE 2 (same 3 images, different order to show variation) -->
+          <div class="carousel-item">
+            <div class="triple-row row gx-3">
+              <div class="col-md-4">
+                <figure class="img-card"><img src="all photos/banner img 3.jpg" alt="products" /></figure>
+              </div>
+              <div class="col-md-4">
+                <figure class="img-card"><img src="all photos/img 1.jpg" alt="tool" /></figure>
+              </div>
+              <div class="col-md-4">
+                <figure class="img-card"><img src="all photos/banner img s1.jpg" alt="model" /></figure>
+              </div>
+            </div>
+
+            <div class="carousel-caption-custom text-center">
+              <h2 class="hero-title">SOOTHING RITUALS <span class="script">& Glow</span></h2>
+              <p class="hero-sub">Serums, tools and essentials crafted with skin-first ingredients.</p>
+              <a class="btn btn-ghost-outline" href="Products.html">EXPLORE</a>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#tripleCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#tripleCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+
+        <!-- indicators -->
+        <div class="carousel-indicators mt-3">
+          <button type="button" data-bs-target="#tripleCarousel" data-bs-slide-to="0" class="active" aria-current="true"></button>
+          <button type="button" data-bs-target="#tripleCarousel" data-bs-slide-to="1"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo ticker (continuous scrolling) -->
+  <div class="promo-ticker">
+    <div class="ticker-wrap">
+      <div class="ticker">
+        <span>Brand New Beauty Products Up To 20% Off - Shop Now</span>
+        <span> • Free shipping over ₹999 • 30-day returns • Clinically tested formulas</span>
+        <span> • Subscribe & save 10% on first order • Cruelty-free & eco-friendly packaging</span>
+        <!-- duplicate to make continuous loop -->
+        <span>Brand New Beauty Products Up To 20% Off - Shop Now</span>
+        <span> • Free shipping over ₹999 • 30-day returns • Clinically tested formulas</span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+<!-- All categories -->
+
+<main class="py-5" id="categories">
+
+    <div class="container">
+
+      <!-- Section heading -->
+      <div class="text-center mb-4">
+        <h3 class="section-title1">ALL CATEGORIES</h3>
+      </div>
+
+      <!-- 3-column category grid -->
+      <div class="row g-4">
+        <!-- Category 1 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="cat-card" href="#cleansers">
+            <div class="cat-media">
+              <img src="all photos/image 4.jpg" alt="Cleansers">
+            </div>
+            <div class="cat-label">CLEANSERS</div>
+          </a>
+        </div>
+
+        <!-- Category 2 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="cat-card" href="#moisturizers">
+            <div class="cat-media">
+              <img src="all photos/img 8.jpg" alt="Moisturizers">
+            </div>
+            <div class="cat-label">Moisturizers</div>
+          </a>
+        </div>
+
+        <!-- Category 3 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="cat-card" href="#sunscreen">
+            <div class="cat-media">
+              <img src="all photos/sunscreen.jpg" alt="Sun Screen">
+            </div>
+            <div class="cat-label">Sun Screen</div>
+          </a>
+        </div>
+
+        <!-- Category 4 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="cat-card" href="#makeup">
+            <div class="cat-media">
+              <img src="all photos/makeup.jpg" alt="Makeup">
+            </div>
+            <div class="cat-label">MAKEUP</div>
+          </a>
+        </div>
+
+        <!-- Category 5 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="cat-card" href="#accessories">
+            <div class="cat-media">
+              <img src="all photos/accessories.jpg" alt="Accessories">
+            </div>
+            <div class="cat-label">Accessories</div>
+          </a>
+        </div>
+
+        <!-- Category 6 -->
+        <div class="col-12 col-md-6 col-lg-4">
+          <a class="cat-card" href="#perfumes">
+            <div class="cat-media">
+              <img src="all photos/perfumes.jpg" alt="Perfumes">
+            </div>
+            <div class="cat-label">Perfumes</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+
+  <!-- Offer Video -->
+
+ <header class="hero-offer">
+  <div class="hero-bg"></div>
+
+  <!-- TEXT OVERLAY -->
+  <div class="hero-content container text-center">
+    <h1 class="hero-title">
+     Buy 1 Get 1 FREE on beauty essentials <br><span class="script-words">Because one is never enough </span>
+    </h1>
+
+    <p class="hero-sub">Grab it before it ends!</p>
+  </div>
+</header>
+
+
+
+
+  <!-- email section -->
+
+  <section class="subscribe-section py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-xl-8 col-lg-9 col-md-10 text-center">
+
+          <!-- Heading -->
+          <h2 class="main-head">
+            <span class="script-word">Become</span>
+            <span class="caps-word">AN EMAIL MEMBER</span>
+          </h2>
+
+          <!-- Bullet list -->
+          <ul class="benefits list-unstyled mx-auto mt-3">
+            <li>Be the first to see our latest collections and limited-edition pieces.</li>
+            <li>Enjoy subscriber-only discounts and promotional offers for our store.</li>
+            <li>Enjoy gifts and entries into giveaways as a token of our appreciation.</li>
+          </ul>
+
+          <!-- Sign up script text -->
+          <div class="signup-cta mt-4">
+            <span class="sign-script">Sign Up</span>
+            <span class="arrow">➜</span>
+          </div>
+
+          <!-- Email form -->
+          <form class="mx-auto mt-3" style="max-width:560px;" action="#" method="post">
+            <div class="input-group">
+              <input type="email" class="form-control email-input" placeholder="Email" aria-label="Email" required>
+              <button class="btn submit-btn" type="submit" aria-label="Subscribe">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M15.854.146a.5.5 0 0 0-.638-.057L.146 8.354a.5.5 0 0 0 .057.894l4.5 1.5a.5.5 0 0 0 .353-.044L15.91 1.788a.5.5 0 0 0-.056-.642z"/>
+                </svg>
+              </button>
+            </div>
+          </form>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- BESTSELLERS -->
+      <section class="product-section mb-5" id="bestsellers">
+
+        <h2 class="section-heading text-center mb-4 text-center mt-4">BESTSELLERS</h2>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="products-images/cleanser3.avif" alt="Product 1"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Vitamin C Cleanser</h3>
+                <div class="prod-price">₹449</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="all photos/perfumes1.jpg" alt="Product 2"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Elegant Evening Perfume</h3>
+                <div class="prod-price">₹1499</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="all photos/image9.jpg" alt="Product 3"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Pink Glam Eyeshadow Palette</h3>
+                <div class="prod-price">₹799</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="all photos/image2.jpg" alt="Product 4"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Nude Matte Lipstick</h3>
+                <div class="prod-price">₹449</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-section mb-5 bestsellers">  <!-- BESTSELLERS -->
+...
+</section>
+
+
+
+
+
+      <!-- NEW ARRIVALS -->
+      <section class="product-section" id="new-arrivals">
+
+        <h2 class="section-heading text-center mb-4">NEW ARRIVALS</h2>
+
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="products-images/Accessories.jpg" alt="New 1"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Pro Makeup Brush Set</h3>
+                <div class="prod-price">₹1299</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="/all photos/img11.jpg" alt="New 2"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Soft Pink Lipstick</h3>
+                <div class="prod-price">₹499</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="products-images/blush2.jpg" alt="New 3"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Rose Pink Blush</h3>
+                <div class="prod-price">₹459</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-6 col-md-3">
+            <div class="product-card text-center">
+              <div class="prod-media"><img src="all photos/perfumes2.jpg" alt="New 4"></div>
+              <div class="prod-body">
+                <h3 class="prod-title">Vanilla Mist Eau De Parfum</h3>
+                <div class="prod-price">₹1099</div><br>
+                <a class="btn btn-ghost-outline align-items-center" href="Contact.html">Shop Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="product-section new-arrivals">      <!-- NEW ARRIVALS -->
+...
+</section>
+
+    </div>
+  </main>
+
+
+
+
+
+  <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bloom & Glow</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <!-- NAVBAR (green gradient, centered nav, dropdowns, right shop button) -->
+  <header class="site-header">
+    <div class="container d-flex align-items-center position-relative py-3">
+      <!-- left logo -->
+      <div class="brand me-3">BLOOM<small>AND GLOW</small></div>
+
+      <!-- center nav (desktop) -->
+      <nav class="nav-center d-none d-lg-flex">
+        <ul class="nav align-items-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Products.html" id="prodDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Products
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="prodDropdown">
+              <li><a class="dropdown-item" href="Products.html">Products</a></li>
+              <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+              
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Blogs.html" id="blogDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+              <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Pages.html" id="pagesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Pages
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="pagesDropdown">
+              
+              <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+              <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+              <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+              <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+              
+              
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- right icons + Shop button -->
+      <div class="d-flex align-items-center ms-auto gap-3">
+        <div class="nav-icons d-none d-lg-flex">
+          <a href="Products.html" class="icon" aria-label="search">🔍</a>
+         
+        </div>
+
+        <a class="btn btn-shop d-flex align-items-center justify-content-center" href="Contact.html">Shop Now</a>
+
+        <!-- mobile toggle: show nav under header -->
+      </div>
+    </div>
+
+
+    <!-- mobile nav (simple centered links with dropdowns) -->
+    <div class="container d-lg-none pb-3">
+      <ul class="nav justify-content-center">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+
+        <li class="nav-item"><a class="nav-link" href="About Us.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Products.html" id="mProdDrop" data-bs-toggle="dropdown">Product</a>
+          <ul class="dropdown-menu" aria-labelledby="mProdDrop">
+            <li><a class="dropdown-item" href="Products.html">Products</a></li>
+            <li><a class="dropdown-item" href="Terms and Conditions.html">Terms and Conditions</a></li>
+           
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Blogs.html" id="mBlogDrop" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu" aria-labelledby="mBlogDrop">
+            <li><a class="dropdown-item" href="Blogs.html">Blogs</a></li>
+            <li><a class="dropdown-item" href="Blog Details.html">Blog Details</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="Pages.html" id="mPagesDrop" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu" aria-labelledby="mPagesDrop">
+          
+            <li><a class="dropdown-item" href="How To Use.html">How To Use</a></li>
+            <li><a class="dropdown-item" href="Testimonial.html">Testimonial</a></li>
+            <li><a class="dropdown-item" href="FAQ.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="Size Guide.html">Size Guide</a></li>
+            
+          
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="Contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </header>
+  <!-- =================== END NAVBAR =================== -->
+
+
+
+
+
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>How To Use</title>
+  <link rel="stylesheet" href="how-to-use.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<section class="howto-section">
+
+  <h1>How To Use Our Beauty Products</h1>
+  <p class="subtitle">Simple steps to get the best results from each product</p>
+
+  <!-- SEARCH BAR -->
+  <input type="text" id="searchInput" placeholder="Search product..." />
+
+  <!-- PRODUCTS GRID -->
+  <div class="product-grid">
+
+  <!-- CLEANSER -->
+  <div class="product-card" data-name="cleanser">
+    <img src="products-images/cleanser3.avif">
+    <h3>Cleanser</h3>
+    <p><strong>How to Use:</strong><br>
+      Start your routine by applying a small amount of cleanser on damp skin.
+      Gently massage in circular motions to remove dirt, oil, and makeup.
+      Focus on the T-zone and rinse thoroughly with lukewarm water.
+      Use twice daily for fresh, clean, and balanced skin.
+    </p>
+    <p><strong>Ingredients:</strong> Aloe Vera, Glycerin, Vitamin E, Mild Surfactants</p>
+  </div>
+
+  <!-- TONER -->
+  <div class="product-card" data-name="toner">
+    <img src="products-images/toner4.avif">
+    <h3>Toner</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply toner after cleansing using a cotton pad or spray directly on face.
+      It helps tighten pores and restore skin’s natural pH balance.
+      Allow it to absorb completely before applying serum or moisturizer.
+      Suitable for daily use, morning and night.
+    </p>
+    <p><strong>Ingredients:</strong> Rose Water, Witch Hazel, Niacinamide</p>
+  </div>
+
+
+  <!-- SERUM -->
+  <div class="product-card" data-name="serum">
+    <img src="products-images/serum.avif">
+    <h3>Serum</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply a few drops of serum on clean, dry skin after toner.
+Gently press and massage into the face and neck until fully absorbed.
+Serum penetrates deeper to target concerns like dullness, dryness, or uneven skin tone.
+Use daily, preferably at night, for best results.
+Follow with moisturizer to lock in hydration.
+    </p>
+    <p><strong>Ingredients:</strong> Hyaluronic Acid, Niacinamide, Vitamin C, Peptides, Botanical Extracts</p>
+  </div>
+
+  <!-- MOISTURIZER -->
+  <div class="product-card" data-name="moisturizer">
+    <img src="products-images/moisturizer.avif">
+    <h3>Moisturizer</h3>
+    <p><strong>How to Use:</strong><br>
+      Take a small amount and apply evenly on face and neck.
+      Massage gently using upward strokes until fully absorbed.
+      Keeps skin hydrated, soft, and nourished throughout the day.
+      Use daily for healthy and glowing skin.
+    </p>
+    <p><strong>Ingredients:</strong> Shea Butter, Hyaluronic Acid, Vitamin B5</p>
+  </div>
+
+  <!-- SUNSCREEN -->
+  <div class="product-card" data-name="sunscreen">
+    <img src="products-images/sunscreen.avif">
+    <h3>Sunscreen</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply sunscreen generously on face and exposed areas.
+      Use at least 15 minutes before stepping out in the sun.
+      Reapply every 3–4 hours for continuous protection.
+      Prevents sun damage, tanning, and premature aging.
+    </p>
+    <p><strong>Ingredients:</strong> Zinc Oxide, Vitamin C, UV Filters</p>
+  </div>
+
+  <!-- EYE CREAM -->
+  <div class="product-card" data-name="eye cream">
+    <img src="products-images/eye cream.avif">
+    <h3>Eye Cream</h3>
+    <p><strong>How to Use:</strong><br>
+      Dab a small amount around the under-eye area.
+      Use ring finger to gently pat without rubbing.
+      Helps reduce dark circles, puffiness, and fine lines.
+      Use morning and night for best results.
+    </p>
+    <p><strong>Ingredients:</strong> Caffeine, Peptides, Vitamin K</p>
+  </div>
+
+  <!-- FOUNDATION -->
+  <div class="product-card" data-name="foundation">
+    <img src="products-images/foundation2.avif">
+    <h3>Foundation</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply small dots on face and blend evenly using sponge or brush.
+      Start from center and move outward for natural coverage.
+      Builds smooth base while evening skin tone.
+      Suitable for daily or party makeup.
+    </p>
+    <p><strong>Ingredients:</strong> Mineral Pigments, Vitamin E</p>
+  </div>
+
+
+  <!-- Compact Powder -->
+  <div class="product-card" data-name="compact powder">
+    <img src="products-images/compact powder.jpg">
+    <h3>Compact Powder</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply compact powder using a puff or brush after foundation or moisturizer.
+Gently press onto face to set makeup and reduce shine.
+Helps create a smooth, matte finish that lasts longer.
+Ideal for touch-ups throughout the day.
+Suitable for all skin types.
+    </p>
+    <p><strong>Ingredients:</strong> Talc, Silica, Zinc Oxide, Natural Pigments, Vitamin E</p>
+  </div>
+
+  <!-- CONCEALER -->
+  <div class="product-card" data-name="concealer">
+    <img src="products-images/concealer2.avif">
+    <h3>Concealer</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply on dark circles, blemishes, or pigmentation.
+      Gently blend using fingertips or brush.
+      Provides targeted coverage without heavy feel.
+      Use after foundation for flawless finish.
+    </p>
+    <p><strong>Ingredients:</strong> Jojoba Oil, Natural Pigments</p>
+  </div>
+
+  <!-- BLUSH -->
+  <div class="product-card" data-name="blush">
+    <img src="products-images/blush1.jpg">
+    <h3>Blush</h3>
+    <p><strong>How to Use:</strong><br>
+      Smile and lightly apply on the apples of cheeks.
+      Blend outward for a natural flush.
+      Adds freshness and healthy glow to face.
+      Suitable for everyday and party looks.
+    </p>
+    <p><strong>Ingredients:</strong> Natural Color Pigments</p>
+  </div>
+
+  <!-- HIGHLIGHTER -->
+  <div class="product-card" data-name="highlighter">
+    <img src="products-images/highlighter2.jpg">
+    <h3>Highlighter</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply on cheekbones, nose bridge, and cupid’s bow.
+      Blend softly for luminous glow.
+      Enhances facial features with radiant finish.
+      Use lightly for natural look.
+    </p>
+    <p><strong>Ingredients:</strong> Mica, Vitamin E</p>
+  </div>
+
+  <!-- EYESHADOW -->
+  <div class="product-card" data-name="eyeshadow">
+    <img src="products-images/eyeshadow.avif">
+    <h3>Eyeshadow</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply base shade all over eyelid.
+      Add darker shade on crease and blend well.
+      Creates depth and enhances eye shape.
+      Suitable for day and night looks.
+    </p>
+    <p><strong>Ingredients:</strong> Natural Pigments, Minerals</p>
+  </div>
+
+  <!-- LINER -->
+  <div class="product-card" data-name="liner">
+    <img src="products-images/eyeliner1.jpg">
+    <h3>Eyeliner</h3>
+    <p><strong>How to Use:</strong><br>
+      Draw a thin line along the upper lash line.
+      Extend slightly for winged look if desired.
+      Defines eyes and enhances lash appearance.
+      Long-lasting and smudge-free.
+    </p>
+    <p><strong>Ingredients:</strong> Carbon Black, Wax Base</p>
+  </div>
+
+  <!-- MASCARA -->
+  <div class="product-card" data-name="mascara">
+    <img src="products-images/muscara.jpg">
+    <h3>Mascara</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply from root to tip in zig-zag motion.
+      Use multiple coats for volume and length.
+      Enhances lashes without clumping.
+      Perfect for daily and party makeup.
+    </p>
+    <p><strong>Ingredients:</strong> Beeswax, Natural Oils</p>
+  </div>
+
+  <!-- LIPSTICK -->
+  <div class="product-card" data-name="lipstick">
+    <img src="products-images/lipstick2.jpg">
+    <h3>Lipstick</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply evenly from center to corners of lips.
+      Use lip liner for defined shape if needed.
+      Provides rich color with smooth finish.
+      Keeps lips soft and moisturized.
+    </p>
+    <p><strong>Ingredients:</strong> Shea Butter, Color Pigments</p>
+  </div>
+
+  <!-- LIP Balm -->
+  <div class="product-card" data-name="lipbalm">
+    <img src="products-images/lip balm3.jpg">
+    <h3>Lip Balm</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply lip balm evenly on clean lips.
+Use throughout the day to keep lips soft and moisturized.
+Can be applied before lipstick for smooth application.
+Helps heal dryness and prevent chapped lips.
+Safe for daily and overnight use.
+    </p>
+    <p><strong>Ingredients:</strong> Beeswax, Shea Butter, Coconut Oil, Vitamin E, Natural Oils</p>
+  </div>
+
+  <!-- LOTION -->
+  <div class="product-card" data-name="lotion">
+    <img src="products-images/lotion5.avif">
+    <h3>Lotion</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply generously on clean body skin.
+      Massage gently until absorbed.
+      Keeps skin soft, hydrated, and nourished.
+      Ideal for daily use after shower.
+    </p>
+    <p><strong>Ingredients:</strong> Aloe Vera, Vitamin E</p>
+  </div>
+
+  <!-- NAIL PAINT -->
+  <div class="product-card" data-name="nailpaint">
+    <img src="products-images/nail polish5.jpg">
+    <h3>Nail Paint</h3>
+    <p><strong>How to Use:</strong><br>
+      Apply thin coat on clean nails.
+      Allow first coat to dry before second coat.
+      Provides smooth, glossy, long-lasting finish.
+      Avoid contact until fully dry.
+    </p>
+    <p><strong>Ingredients:</strong> Color Pigments, Resin Base</p>
+  </div>
+
+  <!-- perfumes -->
+  <div class="product-card" data-name="perfumes">
+    <img src="products-images/perfumes3.jpg">
+    <h3>Perfumes</h3>
+    <p><strong>How to Use:</strong><br>
+    Spray perfume on pulse points such as wrists, neck, and behind the ears.
+Apply on clean, dry skin for longer-lasting fragrance.
+Avoid rubbing after application to preserve the scent notes.
+Use lightly for daily wear or layer for special occasions.
+Reapply as needed for a refreshing feel.
+    </p>
+    <p><strong>Ingredients:</strong> Fragrance Oils, Alcohol Denat., Aqua, Essential Oil Blends</p>
+  </div>
+
+
+  <!-- Brushes -->
+  <div class="product-card" data-name="brushes">
+    <img src="products-images/brushes.jpg">
+    <h3>Makeup Brushes</h3>
+    <p><strong>How to Use:</strong><br>
+      Use makeup brushes to apply and blend products smoothly on the face and eyes.
+Choose the right brush for each product, such as foundation, powder, blush, or eyeshadow.
+Apply product in gentle strokes or circular motions for a flawless finish.
+Clean brushes regularly to avoid product buildup and skin irritation.
+Well-maintained brushes ensure better makeup results and hygiene.
+    </p>
+    <p><strong>Ingredients:</strong> Synthetic Bristles, Natural Fiber Blend, Wooden or Plastic Handle, Aluminum Ferrule</p>
+  </div>
+
+
+</div>
+
+
+
+
+   <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+ <!-- ===================== SITE FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="row gy-4">
+        <!-- About / Logo -->
+        <div class="col-12 col-md-4">
+          <div class="f-brand">
+            <div class="logo-txt">BEAUTY <small>AND CO.</small></div>
+            <p class="f-desc">
+              Clean, gentle formulas crafted for sensitive skin. Cruelty-free, sustainably packaged — skincare that loves skin & planet.
+            </p>
+
+            <div class="socials">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-youtube"></i></a>
+              <a href=""><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick links -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Shop</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Products.html">All Products</a></li>
+            <li><a href="index.html#categories">Categories</a></li>
+            <li><a href="index.html#new-arrivals">New Arrivals</a></li>
+            <li><a href="index.html#bestsellers">Bestsellers</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Company</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="About Us.html">about</a></li>
+            <li><a href="Products.html">Products</a></li>
+            <li><a href="Blogs.html">Blogs</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Customer care -->
+        <div class="col-6 col-md-2">
+          <h4 class="f-title">Support</h4>
+          <ul class="f-list list-unstyled">
+            <li><a href="Contact.html">Shipping</a></li>
+            <li><a href="Contact.html">Returns</a></li>
+            <li><a href="FAQ.html">FAQs</a></li>
+            <li><a href="size guide.html">Size Guide</a></li>
+          </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="col-12 col-md-2">
+          <h4 class="f-title">Join & Save</h4>
+          <p class="f-small">Sign up for 10% off your first order and exclusive offers.</p>
+
+          <form class="f-newsletter" action="#" method="post">
+            <input class="f-input" type="email" name="email" placeholder="Your email" required>
+            <button class="f-btn" type="submit" aria-label="Subscribe">→</button>
+          </form>
+
+          <div class="payment-icons" aria-hidden="true">
+            <a href=""><i class="fa-brands fa-cc-visa"></i></a>
+            <a href=""><i class="fa-brands fa-cc-mastercard"></i></a>
+            <a href=""><i class="fa-brands fa-cc-amex"></i></a>
+            <a href=""><i class="fa-brands fa-cc-paypal"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+      <div class="copyright">© <span id="year"></span> Beauty & Co. • All rights reserved.</div>
+      <div class="policies">
+        <a href="Terms and Conditions.html">Privacy Policy</a>
+        <span class="sep">•</span>
+        <a href="Terms and Conditions.html">Terms</a>
+        <span class="sep">•</span>
+        <a href="Contact.html#maps">Sitemap</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script>
+  // small script to set current year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+<!-- =================== END SITE FOOTER =================== -->
+
+
+
+<script>
+  const searchInput = document.getElementById("searchInput");
+  const productCards = document.querySelectorAll(".product-card");
+
+  searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase().trim();
+
+    productCards.forEach(card => {
+      const name = card.getAttribute("data-name").toLowerCase();
+      const title = card.querySelector("h3").innerText.toLowerCase();
+
+      if (query === "" || name.includes(query) || title.includes(query)) {
+        card.style.display = "";     // 🔥 original grid size preserve
+      } else {
+        card.style.display = "none"; // hide only
+      }
+    });
+  });
+</script>
+
+
+
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"></script>
+</body>
+</html>
