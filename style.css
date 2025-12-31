@@ -624,6 +624,10 @@ body {
   box-shadow: 0 25px 60px rgba(0,0,0,0.08);
 }
 
+
+
+
+
 /* VALUES */
 .values-section {
   padding: 80px 0;
@@ -631,8 +635,13 @@ body {
 
 .section-title {
   text-align: center;
-  font-weight: 600;
-  margin-left: 100px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+
+/* force equal height cards */
+.values-section .row {
+  align-items: stretch;
 }
 
 .glass-box {
@@ -641,12 +650,33 @@ body {
   border-radius: 20px;
   padding: 30px;
   text-align: center;
-  transition: 0.3s;
+  transition: 0.3s ease;
+  height: 100%;                /* 🔑 KEY LINE */
+  display: flex;               /* 🔑 KEY LINE */
+  flex-direction: column;      /* 🔑 KEY LINE */
 }
 
+/* title */
+.glass-box h4 {
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #d63384;
+}
+
+/* text */
+.glass-box p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #444;
+  margin: 0;
+}
+
+/* hover effect */
 .glass-box:hover {
   transform: translateY(-8px);
+  box-shadow: 0 18px 40px rgba(214,51,132,0.18);
 }
+
 
 /* IMAGE STRIP */
 .image-strip {
@@ -780,7 +810,7 @@ body {
   font-weight:600;
 }
 
-/* ================= PRODUCT CARDS ================= */
+/* ================= PRODUCT CARDS (FIXED SIZE) ================= */
 
 .products-page .product-card{
   background:#fff;
@@ -789,6 +819,7 @@ body {
   overflow:hidden;
   display:flex;
   flex-direction:column;
+  height:100%;                     /* ⭐ same height */
   transition:transform .2s ease, box-shadow .2s ease;
 }
 
@@ -797,6 +828,7 @@ body {
   box-shadow:0 22px 45px rgba(214,51,132,.18);
 }
 
+/* fixed image height */
 .products-page .product-card img{
   width:100%;
   height:220px;
@@ -804,20 +836,30 @@ body {
   border-radius:16px 16px 0 0;
 }
 
+/* content stretch */
 .products-page .prod-body{
   padding:.85rem;
-  margin-top:auto;
+  display:flex;                    /* ⭐ important */
+  flex-direction:column;
+  flex-grow:1;
 }
 
+/* same title height */
 .products-page .prod-title{
   font-size:.95rem;
   font-weight:600;
   margin-bottom:.25rem;
+  min-height:38px;                 /* ⭐ equal title space */
 }
 
 .products-page .prod-price{
   color:var(--pink-600);
   font-weight:700;
+}
+
+/* price + button always bottom */
+.products-page .prod-body > div:last-child{
+  margin-top:auto;                 /* ⭐ bottom align */
 }
 
 /* buttons */
@@ -864,18 +906,14 @@ body {
   }
 }
 
-
-
 /* ================= CATEGORY SCROLL FIX ================= */
 
-/* Categories container */
 .products-page #categoriesWrap{
-  max-height:400px;            /* at a time 2–3 categories */
-  overflow-y:auto;             /* vertical scroll */
-  padding-right:6px;           /* scrollbar space */
+  max-height:400px;
+  overflow-y:auto;
+  padding-right:6px;
 }
 
-/* Smooth & clean scrollbar (Chrome, Edge) */
 .products-page #categoriesWrap::-webkit-scrollbar{
   width:6px;
 }
@@ -894,7 +932,6 @@ body {
   background:#b92c6a;
 }
 
-/* Firefox support */
 .products-page #categoriesWrap{
   scrollbar-width:thin;
   scrollbar-color:#d63384 #fff0f6;
@@ -923,7 +960,7 @@ body {
   content:"";
   position:absolute;
   inset:0;
-  background-image:url('images/pink-leaf-bg.png'); /* optional soft pattern */
+  background-image:url('images/pink-leaf-bg.png');
   background-size:cover;
   opacity:0.2;
 }
@@ -956,33 +993,55 @@ body {
   color:#6f6f6f;
 }
 
-/* BLOG CARDS */
+/* ============================= */
+/* BLOG GRID SAME HEIGHT FIX */
+/* ============================= */
+.blog-section .row{
+  align-items:stretch;
+}
+
+/* BLOG CARD */
 .blog-card{
   background:#fff;
   padding:12px;
   border-radius:12px;
   box-shadow:0 10px 25px rgba(0,0,0,0.08);
-  transition:.25s;
+  transition:0.3s ease;
+  height:100%;
+  display:flex;
+  flex-direction:column;
 }
+
 .blog-card:hover{
-  transform:translateY(-5px);
+  transform:translateY(-6px);
   box-shadow:0 20px 40px rgba(0,0,0,0.14);
 }
 
+/* BLOG IMAGE – SAME SIZE */
 .blog-card img{
   width:100%;
-  border-radius:10px;
-  height:260px;
+  height:240px;
   object-fit:cover;
+  border-radius:10px;
 }
+
+/* BLOG TITLE */
 .blog-title{
   margin-top:15px;
   font-weight:700;
   font-size:1.1rem;
   color:#222;
 }
+
+/* BLOG TEXT */
+.blog-card p{
+  font-size:0.95rem;
+  color:#555;
+}
+
+/* READ MORE BUTTON – ALWAYS BOTTOM */
 .btn-read-more{
-  margin-top:10px;
+  margin-top:auto;
   background:linear-gradient(180deg,#f37fa3,#d63384);
   color:#fff;
   border:none;
@@ -990,6 +1049,19 @@ body {
   border-radius:6px;
   font-weight:600;
   cursor:pointer;
+  transition:0.3s;
+}
+
+.btn-read-more:hover{
+  opacity:0.9;
+  transform:translateY(-2px);
+}
+
+/* MOBILE */
+@media (max-width:768px){
+  .blog-card img{
+    height:200px;
+  }
 }
 
 
