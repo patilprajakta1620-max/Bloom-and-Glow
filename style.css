@@ -564,6 +564,170 @@ body{
 
 
 
+
+/* /* Mobile layout */
+
+/* =====================================
+   MOBILE FRIENDLY FIX – HOME PAGE
+===================================== */
+
+/* Prevent horizontal scroll */
+html, body{
+  overflow-x:hidden;
+}
+
+/* ---------------- NAVBAR ---------------- */
+@media (max-width:991px){
+  .site-header{
+    padding:10px 0;
+  }
+
+  .brand{
+    font-size:1.3rem;
+  }
+
+  .btn-shop{
+    padding:.45rem .8rem;
+    font-size:.85rem;
+  }
+}
+
+/* ---------------- HERO SLIDER ---------------- */
+@media (max-width:768px){
+
+  /* one image per row */
+  .triple-row .col-md-4{
+    flex:0 0 100%;
+    max-width:100%;
+  }
+
+  .img-card img{
+    height:220px;
+  }
+
+  .carousel-caption-custom{
+    margin-top:10px;
+    padding:0 12px;
+  }
+
+  .hero-title{
+    font-size:1.8rem;
+    line-height:1.2;
+  }
+
+  .hero-sub{
+    font-size:.95rem;
+  }
+
+  .btn-ghost-outline{
+    padding:.45rem .9rem;
+    font-size:.85rem;
+  }
+}
+
+/* ---------------- PROMO TICKER ---------------- */
+@media (max-width:768px){
+  .ticker{
+    font-size:.85rem;
+  }
+}
+
+/* ---------------- CATEGORIES ---------------- */
+@media (max-width:768px){
+  .cat-media img{
+    height:200px;
+  }
+
+  .cat-label{
+    font-size:1.3rem;
+    padding:14px;
+  }
+}
+
+/* ---------------- OFFER BANNER ---------------- */
+@media (max-width:768px){
+  .hero-offer{
+    height:50vh;
+    min-height:260px;
+  }
+
+  .hero-offer .hero-title{
+    font-size:1.8rem;
+  }
+
+  .hero-offer .hero-sub{
+    font-size:1rem;
+  }
+}
+
+/* ---------------- EMAIL SUBSCRIBE ---------------- */
+@media (max-width:768px){
+  .main-head{
+    flex-direction:column;
+    gap:6px;
+  }
+
+  .script-word{
+    font-size:2.4rem;
+  }
+
+  .caps-word{
+    font-size:1.2rem;
+  }
+
+  .benefits{
+    font-size:.9rem;
+  }
+}
+
+/* ---------------- PRODUCT CARDS ---------------- */
+@media (max-width:768px){
+  .prod-media img{
+    height:170px;
+  }
+
+  .prod-title{
+    font-size:.9rem;
+  }
+
+  .prod-price{
+    font-size:.95rem;
+  }
+
+  .product-card{
+    border-radius:12px;
+  }
+}
+
+/* ---------------- FOOTER ---------------- */
+@media (max-width:768px){
+  .site-footer{
+    text-align:center;
+  }
+
+  .socials{
+    justify-content:center;
+  }
+
+  .payment-icons{
+    justify-content:center;
+  }
+
+  .footer-bottom{
+    text-align:center;
+  }
+
+  .policies{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+}
+
+
+
+
+
+
 /* About Us page */
 
 
@@ -706,6 +870,111 @@ body {
 /* CTA */
 .cta-section {
   padding: 90px 0;
+}
+
+
+
+
+
+
+/* =====================================
+   ABOUT US – MOBILE LAYOUT ONLY
+===================================== */
+
+@media (max-width: 768px){
+
+  /* ---------- HERO ---------- */
+  .hero-glow{
+    padding: 60px 0;
+    text-align: center;
+  }
+
+  .hero-text h1{
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .hero-text p{
+    font-size: 15px;
+    margin: 14px 0;
+  }
+
+  .hero-btn{
+    padding: 10px 26px;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  .hero-img{
+    margin-top: 30px;
+  }
+
+  .hero-img img{
+    max-width: 90%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* ---------- STORY ---------- */
+  .story-section{
+    padding: 60px 0;
+  }
+
+  .story-card{
+    padding: 30px 24px;
+  }
+
+  /* ---------- VALUES ---------- */
+  .values-section{
+    padding: 60px 0;
+  }
+
+  .section-title{
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  .glass-box{
+    padding: 24px;
+  }
+
+  .glass-box h4{
+    font-size: 18px;
+  }
+
+  .glass-box p{
+    font-size: 14px;
+  }
+
+  /* ---------- IMAGE STRIP ---------- */
+  .image-strip{
+    flex-direction: column;
+    gap: 16px;
+    padding: 40px 15px;
+  }
+
+  .image-strip img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+  }
+
+  /* ---------- PROMISE ---------- */
+  .promise-section{
+    padding: 60px 0;
+  }
+
+  .promise-box{
+    padding: 32px 24px;
+    border-radius: 22px;
+  }
+
+  /* ---------- CTA ---------- */
+  .cta-section{
+    padding: 60px 0;
+    text-align: center;
+  }
+
 }
 
 
@@ -942,6 +1211,116 @@ body {
 
 
 
+/* =====================================
+   PRODUCTS PAGE – MOBILE LAYOUT ONLY
+===================================== */
+
+@media (max-width: 768px){
+
+  /* ---------- HERO ---------- */
+  .products-page .page-hero{
+    padding: 0.9rem 0;
+    text-align: center;
+  }
+
+  .products-page .page-hero h1{
+    font-size: 1.6rem;
+  }
+
+  .products-page .page-hero p{
+    font-size: 0.85rem;
+  }
+
+  /* ---------- SIDEBAR ---------- */
+  .products-page .shop-sidebar{
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .products-page .filter-title{
+    font-size: 0.95rem;
+  }
+
+  .products-page .form-label{
+    font-size: 0.85rem;
+  }
+
+  /* categories scroll height smaller on mobile */
+  .products-page #categoriesWrap{
+    max-height: 260px;
+  }
+
+  /* ---------- PRODUCT GRID ---------- */
+  .products-page .row.g-4{
+    row-gap: 1rem;
+  }
+
+  /* ---------- PRODUCT CARDS ---------- */
+  .products-page .product-card{
+    border-radius: 14px;
+  }
+
+  /* image size optimized */
+  .products-page .product-card img{
+    height: 150px;
+  }
+
+  .products-page .prod-body{
+    padding: 0.7rem;
+  }
+
+  .products-page .prod-title{
+    font-size: 0.85rem;
+    min-height: 34px;
+  }
+
+  .products-page .prod-price{
+    font-size: 0.9rem;
+  }
+
+  /* button size */
+  .products-page .btn,
+  .products-page .btn-pink,
+  .products-page .btn-outline-pink{
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    border-radius: 6px;
+  }
+
+  /* ---------- TAGS ---------- */
+  .products-page .tag{
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+  }
+
+  /* ---------- QUICK VIEW ---------- */
+  .products-page .gallery-thumb{
+    width: 46px;
+    height: 46px;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+  .products-page .product-card img{
+    height: 135px;
+  }
+
+  .products-page .prod-title{
+    font-size: 0.8rem;
+  }
+
+  .products-page .prod-price{
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
+
 
 
 
@@ -1092,6 +1471,103 @@ body {
 }
 
 
+
+
+
+/* =====================================
+   BLOG PAGE – MOBILE LAYOUT ONLY
+===================================== */
+
+@media (max-width: 768px){
+
+  /* ---------- HERO ---------- */
+  .blog-hero{
+    min-height: 180px;
+    padding: 45px 0 40px;
+    text-align: center;
+  }
+
+  .inner-title{
+    font-size: 1.8rem;
+    line-height: 1.2;
+  }
+
+  .inner-breadcrumb{
+    font-size: 0.85rem;
+  }
+
+  /* ---------- HEADINGS ---------- */
+  .blog-heading{
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .blog-sub{
+    font-size: 0.9rem;
+    padding: 0 10px;
+  }
+
+  /* ---------- BLOG GRID ---------- */
+  .blog-section .row{
+    row-gap: 1.2rem;
+  }
+
+  /* ---------- BLOG CARD ---------- */
+  .blog-card{
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .blog-card img{
+    height: 180px;
+  }
+
+  .blog-title{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+  .blog-card p{
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }
+
+  /* ---------- READ MORE BUTTON ---------- */
+  .btn-read-more{
+    align-self: center;
+    font-size: 0.75rem;
+    padding: 6px 12px;
+    border-radius: 5px;
+  }
+
+  /* ---------- FOOTER FIX ---------- */
+  .blog-page .site-footer{
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+  .inner-title{
+    font-size: 1.6rem;
+  }
+
+  .blog-card img{
+    height: 160px;
+  }
+
+  .blog-title{
+    font-size: 0.95rem;
+  }
+
+  .blog-card p{
+    font-size: 0.8rem;
+  }
+}
 
 
 
@@ -1250,6 +1726,133 @@ body {
   .top-banner img{max-width:100%;}
   .bd-two-images img{height:200px;}
 }
+
+
+
+
+
+/* =====================================
+   BLOG DETAILS – MOBILE LAYOUT ONLY
+===================================== */
+
+@media (max-width: 768px){
+
+  /* ---------- HERO ---------- */
+  .blogdetails-hero{
+    padding: 50px 0 45px;
+  }
+
+  .hero-title{
+    font-size: 1.8rem;
+    line-height: 1.25;
+    padding: 0 12px;
+  }
+
+  .hero-breadcrumb{
+    font-size: 0.85rem;
+  }
+
+  /* ---------- MAIN CONTENT ---------- */
+  .bd-main{
+    padding: 16px 14px 18px;
+  }
+
+  /* ---------- TOP BANNER IMAGE ---------- */
+  .top-banner img{
+    max-width: 100%;
+    margin-bottom: 12px;
+  }
+
+  /* ---------- META INFO ---------- */
+  .meta-info{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .meta-info span{
+    margin-right: 0;
+  }
+
+  /* ---------- TITLE & TEXT ---------- */
+  .bd-title{
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .bd-text{
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  /* ---------- TWO IMAGES SECTION ---------- */
+  .bd-two-images{
+    row-gap: 12px;
+  }
+
+  .bd-two-images img{
+    height: 180px;
+  }
+
+  /* ---------- SIDEBAR ---------- */
+  .sidebar-box{
+    padding: 14px 12px;
+  }
+
+  /* ---------- CATEGORIES ---------- */
+  .categories h4,
+  .blog-posts h4{
+    font-size: 1.05rem;
+  }
+
+  .cat-list li{
+    padding: 9px 10px;
+  }
+
+  .cat-desc{
+    display: block;              /* hover not reliable on mobile */
+    font-size: 0.8rem;
+  }
+
+  /* ---------- SMALL BLOG POSTS ---------- */
+  .blog-small{
+    align-items: flex-start;
+  }
+
+  .blog-small img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .blog-small p{
+    font-size: 0.85rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+  .hero-title{
+    font-size: 1.6rem;
+  }
+
+  .bd-title{
+    font-size: 1.35rem;
+  }
+
+  .bd-two-images img{
+    height: 160px;
+  }
+
+  .bd-text{
+    font-size: 0.85rem;
+  }
+}
+
+
+
+
 
 
 
@@ -1500,6 +2103,98 @@ body {
 
 
 
+/* =====================================
+   CONTACT PAGE – MOBILE RESPONSIVE ONLY
+===================================== */
+@media (max-width: 768px){
+
+  /* HERO */
+  .contact-hero{
+    padding: 45px 15px;
+    text-align: center;
+  }
+
+  .contact-hero h1{
+    font-size: 1.9rem;
+  }
+
+  /* STACK ALL BOXES */
+  .contact-box,
+  .form-box{
+    padding: 18px;
+    margin-bottom: 18px;
+    height: auto;
+  }
+
+  /* CONTACT INFO */
+  .contact-item{
+    font-size: 14px;
+    align-items: flex-start;
+  }
+
+  .contact-item span{
+    font-size: 18px;
+    line-height: 1;
+  }
+
+  /* FORM INPUTS */
+  .form-control{
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+
+  .btn-pink{
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  /* PRODUCT MENU */
+  .product-menu-box{
+    padding: 16px;
+  }
+
+  .submenu{
+    padding-left: 10px;
+  }
+
+  /* PRODUCT CARDS */
+  .product-card{
+    padding: 16px;
+  }
+
+  /* ICON ROW (SOCIAL + PAYMENT) */
+  .icon-row{
+    justify-content: center;
+    gap: 14px;
+  }
+
+  .icon-row a,
+  .icon-row i{
+    font-size: 26px;
+    padding: 14px;
+    min-width: 54px;
+  }
+
+  /* MAP */
+  .map iframe{
+    height: 220px;
+  }
+
+  /* FOOTER */
+  .footer{
+    font-size: 13px;
+    padding: 12px;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 /* TESTIMONIALS */
 
@@ -1540,10 +2235,6 @@ body {
 .banner-content p {
   color: #b85c82;
 }
-
-
-
-
 
 
 
@@ -1691,6 +2382,104 @@ body {
 
 
 
+/* =====================================
+   BLOG DETAILS PAGE – MOBILE ONLY
+   
+===================================== */
+@media (max-width: 768px){
+
+  /* PAGE BANNER */
+  .page-banner{
+    height: 200px;
+    padding: 20px;
+  }
+
+  .banner-content h1{
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .banner-content p{
+    font-size: 14px;
+  }
+
+  /* TESTIMONIAL SECTION */
+  .testimonial-section{
+    padding: 50px 15px;
+  }
+
+  .section-heading{
+    margin-bottom: 35px;
+  }
+
+  .section-heading span{
+    font-size: 12px;
+    padding: 5px 12px;
+  }
+
+  .section-heading h2{
+    font-size: 1.6rem;
+  }
+
+  /* SLIDER WRAP */
+  .testimonial-slider{
+    padding: 0 5px;
+  }
+
+  /* ONE CARD PER ROW */
+  .testimonial-group{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 0;
+  }
+
+  /* CARD */
+  .testimonial-card{
+    padding: 20px;
+  }
+
+  .testimonial-card::before{
+    font-size: 42px;
+    top: -14px;
+  }
+
+  /* TEXT */
+  .testimonial-card p{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  /* CLIENT INFO */
+  .client-info{
+    gap: 12px;
+  }
+
+  .client-info img{
+    width: 46px;
+    height: 46px;
+  }
+
+  .client-info h4{
+    font-size: 15px;
+  }
+
+  .client-info small{
+    font-size: 12px;
+  }
+
+  .stars{
+    font-size: 0.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
 
 
 /* HOW TO USE */
@@ -1774,6 +2563,87 @@ body {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 20px;
 }
+
+
+
+
+/* =====================================
+   HOW TO USE PAGE – MOBILE ONLY
+===================================== */
+@media (max-width: 768px){
+
+  /* SECTION SPACING */
+  .howto-section{
+    padding: 40px 15px;
+  }
+
+  /* MAIN TITLE */
+  .howto-section h1{
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  /* SUBTITLE */
+  .subtitle{
+    font-size: 14px;
+    margin: 8px 0 24px;
+  }
+
+  /* SEARCH BAR */
+  #searchInput{
+    width: 100%;
+    max-width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  /* GRID → SINGLE COLUMN */
+  .product-grid{
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  /* CARD */
+  .product-card{
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  /* IMAGE */
+  .product-card img{
+    height: 180px;
+    border-radius: 12px;
+  }
+
+  /* CARD TITLE */
+  .product-card h3{
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  /* CARD TEXT */
+  .product-card p{
+    font-size: 14px;
+    line-height: 1.6;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+  .howto-section h1{
+    font-size: 24px;
+  }
+
+  .product-card img{
+    height: 160px;
+  }
+}
+
+
+
+
 
 
 
@@ -1886,6 +2756,74 @@ body.faq-page {
 
 
 
+/* =====================================
+   FAQ PAGE – MOBILE ONLY
+===================================== */
+@media (max-width: 768px){
+
+  /* PAGE SPACING */
+  .faq-section{
+    padding: 40px 15px;
+  }
+
+  /* FAQ HEADING */
+  .faq-section h1,
+  .faq-section h2{
+    font-size: 26px;
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  .faq-section p{
+    font-size: 14px;
+  }
+
+  /* FAQ ITEM */
+  .faq-item{
+    margin-bottom: 14px;
+  }
+
+  /* QUESTION BOX */
+  .faq-question{
+    font-size: 15px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    line-height: 1.4;
+  }
+
+  /* ANSWER BOX */
+  .faq-answer{
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 12px 16px;
+  }
+
+  /* ICON / ARROW (if any) */
+  .faq-question::after{
+    font-size: 16px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+  .faq-question{
+    font-size: 14px;
+    padding: 12px 14px;
+  }
+
+  .faq-answer{
+    font-size: 13.5px;
+  }
+}
+
+
+
+
+
+
+
+
 
 /* TERMS & CONDITIONS */
 
@@ -1971,6 +2909,82 @@ body {
   font-size: 0.95rem;
   color: #7a0046;
 }
+
+
+
+
+/* =====================================
+   TERMS & CONDITIONS – MOBILE ONLY
+===================================== */
+@media (max-width: 768px){
+
+  /* HERO SECTION */
+  .terms-hero{
+    padding: 50px 15px;
+    text-align: center;
+  }
+
+  .terms-hero h1{
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
+
+  .terms-hero p{
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  /* CONTENT WRAPPER */
+  .terms-content{
+    padding: 0 15px;
+  }
+
+  /* TERMS BOX */
+  .terms-box{
+    padding: 22px 18px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+  }
+
+  .terms-box h3{
+    font-size: 1.1rem;
+  }
+
+  .terms-box p{
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  /* DISABLE HOVER LIFT ON MOBILE (optional but cleaner) */
+  .terms-box:hover{
+    transform: none;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px){
+
+  .terms-hero h1{
+    font-size: 1.9rem;
+  }
+
+  .terms-box{
+    padding: 18px 16px;
+  }
+
+  .terms-box p{
+    font-size: 0.9rem;
+  }
+
+  .terms-footer{
+    font-size: 0.85rem;
+    padding: 16px 12px;
+    text-align: center;
+  }
+}
+
+
+
 
 
 
@@ -2095,11 +3109,93 @@ body {
 
 
 
+/* =====================================
+   PAGES PAGE – MOBILE RESPONSIVE ONLY
+   ===================================== */
+
+/* HERO */
+@media (max-width: 768px) {
+  .pages-hero {
+    padding: 60px 15px;
+    text-align: center;
+  }
+
+  .pages-hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .pages-hero p {
+    font-size: 0.95rem;
+  }
+}
+
+/* PAGE CARDS GRID */
+@media (max-width: 768px) {
+  .pages-section {
+    padding: 0 15px;
+  }
+
+  .page-card {
+    padding: 28px 20px;
+    border-radius: 18px;
+  }
+
+  .card-icon {
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+  }
+
+  .page-card h3 {
+    font-size: 1.25rem;
+  }
+
+  .page-card p {
+    font-size: 0.95rem;
+  }
+
+  .card-link {
+    margin-top: 14px;
+    font-size: 0.95rem;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 480px) {
+  .pages-hero h1 {
+    font-size: 1.9rem;
+  }
+
+  .page-card {
+    padding: 24px 18px;
+  }
+
+  .page-card h3 {
+    font-size: 1.15rem;
+  }
+
+  .page-card p {
+    font-size: 0.9rem;
+  }
+}
+
+/* STRIP */
+@media (max-width: 768px) {
+  .pages-strip {
+    text-align: center;
+    font-size: 0.9rem;
+    padding: 20px 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* SIZE GUIDE */
-
-
-
-
 /* ================= SIZE GUIDE PAGE ================= */
 
 .size-guide-page {
