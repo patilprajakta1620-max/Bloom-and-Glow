@@ -73,6 +73,77 @@ body{
   text-decoration:none;
 }
 
+
+
+
+
+/* ================================
+   MOBILE NAVBAR 
+================================ */
+
+.mobile-navbar{
+  display:none;
+}
+
+/* MOBILE ONLY */
+@media (max-width: 991px){
+
+  .site-header{
+    padding:10px 14px;
+  }
+
+  /* hide desktop nav */
+  .nav-center,
+  .nav-icons,
+  .btn-shop{
+    display:none !important;
+  }
+
+  /* show mobile bar */
+  .mobile-navbar{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+
+  /* LOGO */
+  .mobile-logo img{
+    height:42px;
+    width:auto;
+    display:block;
+  }
+
+  /* HAMBURGER */
+  .mobile-menu-btn{
+    background:transparent;
+    border:none;
+    width:40px;
+    height:34px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    gap:6px;
+    cursor:pointer;
+  }
+
+  .mobile-menu-btn span{
+    display:block;
+    height:3px;
+    width:26px;
+    background:#1a0f14;
+    border-radius:3px;
+    transition:0.3s ease;
+  }
+}
+
+
+
+
+
+
+
+
+
 /* ======================================================
    HERO / TRIPLE IMAGE SLIDER
 ====================================================== */
@@ -1575,6 +1646,8 @@ body {
 
 
 
+
+
 /* Blog Details */
 
 /* HERO (same as before) */
@@ -2240,7 +2313,7 @@ body {
 
 
 /* TESTIMONIAL SECTION */
-/* ================= TESTIMONIAL SECTION ================= */
+
 
 .testimonial-section{
   padding:80px 0;
@@ -3379,6 +3452,125 @@ body {
   }
 }
 
+
+
+
+/* =========================================
+   SIZE GUIDE – MOBILE FRIENDLY ADJUSTMENTS
+========================================= */
+
+@media (max-width: 992px){
+
+  /* HERO */
+  .size-hero{
+    padding:60px 16px;
+    text-align:center;
+  }
+
+  .size-hero h1{
+    font-size:36px;
+  }
+
+  .size-hero p{
+    font-size:16px;
+  }
+
+  /* INTRO */
+  .size-intro{
+    padding:40px 16px;
+  }
+
+  .size-intro p{
+    font-size:16px;
+    line-height:1.7;
+  }
+
+  /* MODEL VISUAL */
+  .model-visual{
+    padding:40px 16px;
+  }
+
+  .model-visual h3{
+    text-align:center;
+  }
+
+  .model-visual ul{
+    padding-left:18px;
+  }
+
+  .model-visual ul li{
+    font-size:15px;
+  }
+
+  /* TABLE */
+  .size-table-section{
+    padding:40px 16px;
+  }
+
+  .size-table{
+    overflow-x:auto;              /* 🔑 horizontal scroll on mobile */
+  }
+
+  .size-table table{
+    min-width:600px;              /* keeps table readable */
+  }
+
+  .size-table th,
+  .size-table td{
+    font-size:14px;
+    padding:10px;
+  }
+
+  /* IMAGE STRIP */
+  .size-strip{
+    flex-direction:column;        /* 🔑 stack images */
+    gap:16px;
+    padding:30px 16px;
+  }
+
+  .size-strip img{
+    width:100%;
+  }
+
+  /* NOTE */
+  .size-note{
+    padding:50px 16px;
+    text-align:center;
+  }
+
+  .size-note h4{
+    font-size:22px;
+  }
+
+  .size-btn{
+    padding:10px 24px;
+    font-size:15px;
+  }
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 576px){
+
+  .size-hero h1{
+    font-size:30px;
+  }
+
+  .size-hero p{
+    font-size:15px;
+  }
+
+  .size-intro p{
+    font-size:15px;
+  }
+
+  .model-visual ul li{
+    font-size:14px;
+  }
+
+  .size-note h4{
+    font-size:20px;
+  }
+}
 
 
 
